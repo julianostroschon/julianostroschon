@@ -1,5 +1,7 @@
 <!-- [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=julianostroschon)](https://github.com/anuraghazra/github-readme-stats) -->
 <img align="center" src="https://github-readme-stats.vercel.app/api?username=julianostroschon&show_icons=true&theme=dracula&hide=stars,issues" />
+<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={julianostroschon}&theme=vue" />
+
 
 <!-- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=julianostroschon&layout=compact&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats) -->
 -----------------------------------------
@@ -12,11 +14,10 @@ Social Medias
 -----------------------------------------
 Languages
 -----------------------------------------
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
-" />
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
 <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
 <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
-<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=gray" />
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
 
 -----------------------------------------
 Frameworks
