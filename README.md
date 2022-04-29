@@ -3,7 +3,7 @@
 <!-- <img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={julianostroschon}&theme=vue" /> -->
 
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=julianostroschon&layout=compact&show_icons=true&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)
+<!-- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=julianostroschon&layout=compact&show_icons=true&theme=dracula)](https://github.com/anuraghazra/github-readme-stats) -->
 -----------------------------------------
 Social Medias
 -----------------------------------------
