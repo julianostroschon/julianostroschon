@@ -2,7 +2,8 @@
 <img align="center" src="https://github-readme-stats.vercel.app/api?username=julianostroschon&show_icons=true&theme=dracula&hide=stars,issues" />
 <!-- <img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={julianostroschon}&theme=vue" /> -->
 
-
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 <!-- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=julianostroschon&layout=compact&show_icons=true&theme=dracula)](https://github.com/anuraghazra/github-readme-stats) -->
 -----------------------------------------
 Social Medias
