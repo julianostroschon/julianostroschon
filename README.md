@@ -1,6 +1,4 @@
-
-
-<div style="display: flex;">
+<div style="display: flex; align-items: center;">
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=julianostroschon&show_icons=true&theme=dracula&hide=stars,issues" />
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=julianostroschon" />
 </div>
