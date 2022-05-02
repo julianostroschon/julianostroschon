@@ -1,9 +1,11 @@
 
 <img align="center" src="https://github-readme-stats.vercel.app/api?username=julianostroschon&show_icons=true&theme=dracula&hide=stars,issues" />
 <img src="https://github-readme-stats.vercel.app/api/wakatime?username=julianostroschon" />
+
 -----------------------------------------
 Social Medias
 -----------------------------------------
+<div style="display: flex;">
 <a href="https://www.linkedin.com/in/juliano-stroschon-a199211ab/">
   <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
@@ -13,6 +15,7 @@ Social Medias
 <a href="https://www.facebook.com/julianostroschon">
   <img src="https://img.shields.io/badge/facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white">
 </a>
+  </div>
 
 -----------------------------------------
 Languages
