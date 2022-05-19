@@ -1,5 +1,5 @@
 <div>
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=julianostroschon&show_icons=true&theme=dark&hide=stars,issues&&count_private=true" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=julianostroschon&show_icons=true&theme=dark&hide=stars,issues&&count_private=false" />
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=julianostroschon" />
 </div>
 
