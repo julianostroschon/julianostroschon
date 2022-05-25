@@ -9,17 +9,27 @@ permissions:
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: 
+      - main 
+  schedule:
+    - cron: "0 0 * * *"
   pull_request:
     branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-  schedule:
-    - cron: "0 0 * * *"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+
+  devcard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: devcard
+        uses: dailydotdev/action-devcard@2.0.4
+        with:
+          devcard_id: ${{ secrets.DEVCARD_ID }}
+          
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
@@ -39,11 +49,3 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-#custom
-  devcard:
-    runs-on: ubuntu-latest
-    steps:
-      - name: devcard
-        uses: dailydotdev/action-devcard@2.0.4
-        with:
-          devcard_id: ${{ secrets.DEVCARD_ID }}
