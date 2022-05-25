@@ -8,7 +8,7 @@
 
 ## Social Medias
 
-<div style="display: flex;">
+<div style="display: block;">
   <a href="https://www.linkedin.com/in/juliano-stroschon-a199211ab/">
     <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
