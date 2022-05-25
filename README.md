@@ -1,4 +1,5 @@
 <div>
+  <a href="https://app.daily.dev/stroschon01"><img src="https://api.daily.dev/devcards/cc5db32435114d43940a566801c4bd06.png?r=z3i" width="400" alt="JULIANO EDUARDO STROSCHON's Dev Card"/></a>
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=julianostroschon&show_icons=true&theme=dark&hide=stars,issues&&count_private=true" />
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=julianostroschon" />
 </div>
