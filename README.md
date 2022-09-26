@@ -5,6 +5,8 @@
 
 ----
 
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/?username=julianostroschon&count_private=true"/>
+  
 ## Social Medias
 
 <div style="display: block;">
