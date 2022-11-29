@@ -1,8 +1,7 @@
-<!-- <div>
-  <img src="https://github.com/julianostroschon/julianostroschon/blob/main/devcard.svg" width="400" alt="julianostroschon's Dev Card"/> -->
+<div>
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=julianostroschon&show_icons=true&theme=dark&hide=stars,issues&&count_private=true" />
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=julianostroschon" />
-
+</div>
 ----
 
   
