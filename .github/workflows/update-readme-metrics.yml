@@ -1,0 +1,62 @@
+name: Update GitHub Profile Metrics
+
+on:
+  schedule:
+    # Atualiza a cada 12 horas (use sintaxe cron)
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+    # Permite acionar manualmente pela aba Actions
+  push:
+    branches:
+       # Atualiza também se houver push na branch principal (opcional)
+       - main
+       - master
+
+jobs:
+  update-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+       contents: write # Necessário para commitar o SVG de volta
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Generate Contribution Snake
+        uses: Platane/snk@v3 # Ação que gera o gráfico
+        with:
+          github_user_name: ${{ github.repository_owner }} # Pega o nome de usuário automaticamente
+          # Lista de saídas (arquivos gerados)
+          # Formato: {nomedoarquivo}.svg / {nomedoarquivo}-dark.svg?palette={paleta}
+          # As paletas disponíveis estão em https://github.com/Platane/snk#palette-list
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        # Define uma variável de ambiente para a ação usar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and Push changes # Commita os arquivos gerados
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add dist/ # Adiciona todos os arquivos na pasta dist (onde o snake foi salvo)
+          # Verifica se há mudanças antes de commitar
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "feat: update contribution snake graph"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # (Opcional) Se você quiser usar actions para atualizar os stats também
+      # - name: Update GitHub Stats
+      #   uses: lowlighter/metrics@latest
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     # Configure as opções do `lowlighter/metrics` aqui
+      #     # Veja: https://github.com/lowlighter/metrics
+      #     # Adicione `base: header, activity, community, repositories, metadata` por exemplo
+      #     # E depois adicione a imagem gerada no seu README
