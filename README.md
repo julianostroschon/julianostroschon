@@ -43,7 +43,7 @@ Sou um **Tech Lead** e **Desenvolvedor Full-Stack** baseado em Santo Ângelo, RS
 
 ### 🐍 Gráfico de Contribuição
 
-![Gráfico de Contribuição](https://raw.githubusercontent.com/julianostroschon/julianostroschon/main/dist/github-contribution-grid-snake.svg)
+![Gráfico de Contribuição](https://raw.githubusercontent.com/julianostroschon/julianostroschon/main/dist/github-contribution-grid-snake-dark.svg)
 ---
 
 * 📫 Como me encontrar: [julianostroschon@gmail.com](mailto:julianostroschon@gmail.com)
