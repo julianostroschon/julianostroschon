@@ -1,17 +1,6 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
-    "name": "backup",
-    "description": "Repositório backup",
-    "url": "https://github.com/julianostroschon/backup",
-    "stars": 0,
-    "forks": 0,
-    "technologies": [
-      "Shell"
-    ],
-    "updated": "2025-04-22"
-  },
-  {
     "name": "julianostroschon",
     "description": "Config files for my GitHub profile.",
     "url": "https://github.com/julianostroschon/julianostroschon",
@@ -21,6 +10,17 @@ const repositoriesData = [
       "CSS",
       "HTML",
       "JavaScript"
+    ],
+    "updated": "2025-04-22"
+  },
+  {
+    "name": "backup",
+    "description": "Repositório backup",
+    "url": "https://github.com/julianostroschon/backup",
+    "stars": 0,
+    "forks": 0,
+    "technologies": [
+      "Shell"
     ],
     "updated": "2025-04-22"
   },
