@@ -1,6 +1,17 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "backup",
+    "description": "Repositório backup",
+    "url": "https://github.com/julianostroschon/backup",
+    "stars": 0,
+    "forks": 0,
+    "technologies": [
+      "Shell"
+    ],
+    "updated": "2025-04-22"
+  },
+  {
     "name": "julianostroschon",
     "description": "Config files for my GitHub profile.",
     "url": "https://github.com/julianostroschon/julianostroschon",
@@ -12,17 +23,6 @@ const repositoriesData = [
       "JavaScript"
     ],
     "updated": "2025-04-22"
-  },
-  {
-    "name": "backup",
-    "description": "Repositório backup",
-    "url": "https://github.com/julianostroschon/backup",
-    "stars": 0,
-    "forks": 0,
-    "technologies": [
-      "Shell"
-    ],
-    "updated": "2025-02-04"
   },
   {
     "name": "front-default",
@@ -198,19 +198,6 @@ const repositoriesData = [
       "Go"
     ],
     "updated": "2023-11-09"
-  },
-  {
-    "name": "pokedex-graphql",
-    "description": "Aplicação Pokedex que utiliza GraphQL para consultar e exibir informações sobre Pokémon de forma eficiente.",
-    "url": "https://github.com/julianostroschon/pokedex-graphql",
-    "stars": 0,
-    "forks": 0,
-    "technologies": [
-      "API",
-      "GraphQL",
-      "JavaScript"
-    ],
-    "updated": "2023-08-28"
   },
   {
     "name": "first-app",
