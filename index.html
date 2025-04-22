@@ -6,7 +6,7 @@
   <title>Juliano Stroschön | Portfólio de Projetos</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js" />
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
   <div id="app" :class="{ 'dark-mode': darkMode }">
@@ -19,13 +19,13 @@
           </div>
           <div class="header-actions">
             <button @click="darkMode = !darkMode" class="theme-toggle" :aria-label="darkMode ? 'Ativar modo claro' : 'Ativar modo escuro'">
-              <i :class="darkMode ? 'fas fa-sun' : 'fas fa-moon'" />
+              <i :class="darkMode ? 'fas fa-sun' : 'fas fa-moon'"></i>
             </button>
             <a href="https://github.com/julianostroschon" target="_blank" class="social-link">
-              <i class="fab fa-github" />
+              <i class="fab fa-github"></i>
             </a>
             <a href="https://www.linkedin.com/in/juliano-stroschon-a199211ab/" target="_blank" class="social-link">
-              <i class="fab fa-linkedin" />
+              <i class="fab fa-linkedin"></i>
             </a>
           </div>
         </div>
@@ -50,7 +50,7 @@
         <h3>Tecnologias</h3>
         <div class="tech-grid">
           <div class="tech-item" v-for="tech in technologies" :key="tech.name" @click="filterByTech(tech.name)">
-            <i :class="tech.icon" />
+            <i :class="tech.icon"></i>
             <span>{{ tech.name }}</span>
           </div>
         </div>
@@ -64,7 +64,7 @@
           <div class="filters">
             <div class="search-box">
               <input type="text" v-model="searchQuery" placeholder="Buscar repositórios...">
-              <i class="fas fa-search" />
+              <i class="fas fa-search"></i>
             </div>
             <div class="sort-options">
               <select v-model="sortOption">
@@ -81,8 +81,8 @@
             <div class="repo-header">
               <h4 class="repo-title">{{ repo.name }}</h4>
               <div class="repo-stats">
-                <span class="repo-stars"><i class="fas fa-star" /> {{ repo.stars }}</span>
-                <span class="repo-forks"><i class="fas fa-code-branch" /> {{ repo.forks }}</span>
+                <span class="repo-stars"><i class="fas fa-star"></i> {{ repo.stars }}</span>
+                <span class="repo-forks"><i class="fas fa-code-branch"></i> {{ repo.forks }}</span>
               </div>
             </div>
             <p class="repo-description">{{ repo.description || 'Sem descrição disponível' }}</p>
@@ -90,14 +90,14 @@
               <span class="tech-tag" v-for="tech in repo.technologies" :key="tech">{{ tech }}</span>
             </div>
             <div class="repo-footer">
-              <a :href="repo.url" target="_blank" class="repo-link">Ver no GitHub <i class="fas fa-external-link-alt" /></a>
+              <a :href="repo.url" target="_blank" class="repo-link">Ver no GitHub <i class="fas fa-external-link-alt"></i></a>
               <span class="repo-updated">Atualizado: {{ formatDate(repo.updated) }}</span>
             </div>
           </div>
         </div>
 
         <div class="empty-state" v-if="filteredRepositories.length === 0">
-          <i class="fas fa-search" />
+          <i class="fas fa-search"></i>
           <p>Nenhum repositório encontrado com os filtros atuais.</p>
           <button @click="resetFilters" class="btn btn-secondary">Limpar filtros</button>
         </div>
@@ -109,34 +109,34 @@
         <div class="about-content">
           <h3>Sobre Mim</h3>
           <p>Sou um <strong>Tech Lead</strong> e <strong>Desenvolvedor Full-Stack</strong> baseado em Santo Ângelo, RS, Brasil 🇧🇷. Tenho paixão por construir soluções robustas e eficientes, liderar equipes e otimizar processos com práticas de <strong>DevOps</strong>.</p>
-          
+
           <div class="about-details">
             <div class="about-item">
-              <i class="fas fa-code" />
+              <i class="fas fa-code"></i>
               <div>
                 <h4>Desenvolvimento</h4>
                 <p>Experiência sólida como desenvolvedor Full-Stack, com foco no ecossistema JavaScript/TypeScript.</p>
               </div>
             </div>
-            
+
             <div class="about-item">
-              <i class="fas fa-users" />
+              <i class="fas fa-users"></i>
               <div>
                 <h4>Liderança</h4>
                 <p>Liderança técnica em times de desenvolvimento há mais de 2 anos.</p>
               </div>
             </div>
-            
+
             <div class="about-item">
-              <i class="fas fa-server" />
+              <i class="fas fa-server"></i>
               <div>
                 <h4>DevOps</h4>
                 <p>Experiência sólida em DevOps, gerenciando serviços em produção e pipelines CI/CD.</p>
               </div>
             </div>
-            
+
             <div class="about-item">
-              <i class="fas fa-graduation-cap" />
+              <i class="fas fa-graduation-cap"></i>
               <div>
                 <h4>Formação</h4>
                 <p>Cursando Graduação em DevOps (Anhanguera) e cursei Ciência da Computação (Unipampa).</p>
@@ -165,16 +165,16 @@
           </div>
           <div class="footer-contact">
             <h4>Contato</h4>
-            <p><i class="fas fa-envelope" /> julianostroschon@gmail.com</p>
+            <p><i class="fas fa-envelope"></i> julianostroschon@gmail.com</p>
             <div class="social-links">
               <a href="https://github.com/julianostroschon" target="_blank" class="social-link">
-                <i class="fab fa-github" />
+                <i class="fab fa-github"></i>
               </a>
               <a href="https://www.linkedin.com/in/juliano-stroschon-a199211ab/" target="_blank" class="social-link">
-                <i class="fab fa-linkedin" />
+                <i class="fab fa-linkedin"></i>
               </a>
               <a href="https://instagram.com/julianostroschon" target="_blank" class="social-link">
-                <i class="fab fa-instagram" />
+                <i class="fab fa-instagram"></i>
               </a>
             </div>
           </div>
