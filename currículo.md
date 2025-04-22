@@ -7,7 +7,6 @@
 **Contato:**
 
 * GitHub: [https://github.com/julianostroschon](https://github.com/julianostroschon)
-* Telefone: 55 99692-9042
 * Email: julianostroschon@gmail.com
 * Localização: Santo Ângelo, RS
 
