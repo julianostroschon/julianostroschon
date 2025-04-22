@@ -1,0 +1,29 @@
+name: Deploy to GitHub Pages
+
+on:
+  # Executa quando o workflow update-repositories.yml é concluído
+  workflow_run:
+    workflows: ["Update Repositories Data"]
+    types:
+      - completed
+  # Permite execução manual a partir da interface do GitHub
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: .
+          branch: gh-pages

@@ -1,0 +1,42 @@
+name: Update Repositories Data
+
+on:
+  schedule:
+    # Executa diariamente à meia-noite
+    - cron: '0 0 * * *'
+  # Permite execução manual a partir da interface do GitHub
+  workflow_dispatch:
+  # Executa quando houver push na branch principal
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  update-repositories:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: npm install @octokit/rest
+      
+      - name: Fetch repository data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node .github/scripts/update-repositories.js
+      
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add js/repositories.js
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update repositories data" && git push)
