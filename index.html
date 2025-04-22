@@ -9,7 +9,7 @@
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-  <div id="app" :class="{ 'dark-mode': darkMode }">
+  <div id="app">
     <header class="header">
       <div class="container">
         <div class="header-content">
@@ -18,7 +18,7 @@
             <p class="tagline">Tech Lead | Full Stack Developer</p>
           </div>
           <div class="header-actions">
-            <button @click="darkMode = !darkMode" class="theme-toggle" :aria-label="darkMode ? 'Ativar modo claro' : 'Ativar modo escuro'">
+            <button @click="toggleDarkMode()" class="theme-toggle" :aria-label="darkMode ? 'Ativar modo claro' : 'Ativar modo escuro'">
               <i :class="darkMode ? 'fas fa-sun' : 'fas fa-moon'"></i>
             </button>
             <a href="https://github.com/julianostroschon" target="_blank" class="social-link">
