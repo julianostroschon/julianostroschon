@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-github-repos",
+  "version": "1.0.0",
+  "description": "Portfólio de repositórios GitHub de Juliano Stroschön",
+  "main": "index.html",
+  "scripts": {
+    "update-repos": "node .github/scripts/update-repositories.js",
+    "serve": "npx http-server -o"
+  },
+  "keywords": [
+    "portfolio",
+    "github",
+    "vue",
+    "repositories"
+  ],
+  "author": "Juliano Stroschön",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^19.0.7"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
