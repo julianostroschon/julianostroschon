@@ -48,8 +48,6 @@ Sou um **Tech Lead** e **Desenvolvedor Full-Stack** baseado em Santo Ângelo, RS
 
 * 📫 Como me encontrar: [julianostroschon@gmail.com](mailto:julianostroschon@gmail.com)
 * 🔗 GitHub: [https://github.com/julianostroschon](https://github.com/julianostroschon)
-* 🌐 Portfólio: [https://julianostroschon.github.io/julianostroschon](https://julianostroschon.github.io/julianostroschon)
-
 ---
 
 ### 🚀 Portfólio de Projetos
