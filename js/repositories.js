@@ -11,7 +11,7 @@ const repositoriesData = [
       "HTML",
       "JavaScript"
     ],
-    "updated": "2025-04-24"
+    "updated": "2025-04-25"
   },
   {
     "name": "backup",
