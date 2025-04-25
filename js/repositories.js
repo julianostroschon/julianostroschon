@@ -1,6 +1,26 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "front-vite-quasar",
+    "description": "Um template moderno para desenvolvimento frontend com Vue 3, Vite, TypeScript e Quasar Framework. Inclui roteamento baseado em arquivos, importação automática de componentes, gerenciamento de estado com Pinia e suporte a i18n.",
+    "url": "https://github.com/julianostroschon/front-vite-quasar",
+    "stars": 1,
+    "forks": 2,
+    "technologies": [
+      "CSS",
+      "HTML",
+      "JavaScript",
+      "Quasar",
+      "Sass",
+      "Shell",
+      "TypeScript",
+      "Vite",
+      "Vue.js",
+      "i18n"
+    ],
+    "updated": "2025-04-25"
+  },
+  {
     "name": "julianostroschon",
     "description": "Config files for my GitHub profile.",
     "url": "https://github.com/julianostroschon/julianostroschon",
@@ -59,26 +79,6 @@ const repositoriesData = [
       "Vue.js"
     ],
     "updated": "2024-10-11"
-  },
-  {
-    "name": "front-vite-quasar",
-    "description": "Um template moderno para desenvolvimento frontend com Vue 3, Vite, TypeScript e Quasar Framework. Inclui roteamento baseado em arquivos, importação automática de componentes, gerenciamento de estado com Pinia e suporte a i18n.",
-    "url": "https://github.com/julianostroschon/front-vite-quasar",
-    "stars": 1,
-    "forks": 2,
-    "technologies": [
-      "CSS",
-      "HTML",
-      "JavaScript",
-      "Quasar",
-      "Sass",
-      "Shell",
-      "TypeScript",
-      "Vite",
-      "Vue.js",
-      "i18n"
-    ],
-    "updated": "2024-09-19"
   },
   {
     "name": "back-default",
