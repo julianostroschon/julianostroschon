@@ -15,25 +15,25 @@ on:
 jobs:
   update-repositories:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-      
+
       - name: Install dependencies
         run: npm install @octokit/rest
-      
+
       - name: Fetch repository data
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
         run: |
           node .github/scripts/update-repositories.js
-      
+
       - name: Commit and push if changed
         run: |
           git config --global user.name 'GitHub Actions'

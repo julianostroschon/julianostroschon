@@ -60,16 +60,16 @@ function detectTechFromName(name) {
     'go': 'Go',
     'docker': 'Docker',
   };
-  
+
   const detectedTech = [];
   const lowerName = name.toLowerCase();
-  
+
   Object.entries(techMap).forEach(([key, tech]) => {
     if (lowerName.includes(key)) {
       detectedTech.push(tech);
     }
   });
-  
+
   return detectedTech;
 }
 
@@ -77,81 +77,102 @@ function detectTechFromName(name) {
 async function main() {
   try {
     console.log('Iniciando atualização dos dados dos repositórios...');
-    
+
     // Inicializar Octokit
     const octokit = new Octokit({
       auth: GITHUB_TOKEN
     });
-    
-    // Buscar todos os repositórios do usuário
+
+    // Buscar todos os repositórios do usuário (incluindo privados)
     console.log(`Buscando repositórios para o usuário: ${GITHUB_USERNAME}`);
-    const { data: repos } = await octokit.repos.listForUser({
-      username: GITHUB_USERNAME,
+    const { data: repos } = await octokit.repos.listForAuthenticatedUser({
       sort: 'updated',
-      per_page: 100
+      per_page: 100,
+      affiliation: 'owner'
     });
-    
-    console.log(`Encontrados ${repos.length} repositórios.`);
-    
+
+    // Filtrar apenas os repositórios do usuário especificado
+    const userRepos = repos.filter(repo => repo.owner.login === GITHUB_USERNAME);
+
+    console.log(`Encontrados ${userRepos.length} repositórios (incluindo privados).`);
+
     // Processar cada repositório
-    const processedRepos = await Promise.all(repos.map(async (repo) => {
+    const processedRepos = await Promise.all(userRepos.map(async (repo) => {
       if (repo.fork) {
         console.log(`Ignorando fork: ${repo.name}`);
         return null; // Ignorar forks
       }
-      
-      console.log(`Processando repositório: ${repo.name}`);
-      
+
+      const isPrivate = repo.private;
+      console.log(`Processando repositório: ${repo.name} (${isPrivate ? 'privado' : 'público'})`);
+
       // Buscar linguagens do repositório
       const { data: languages } = await octokit.repos.listLanguages({
         owner: GITHUB_USERNAME,
         repo: repo.name
       });
-      
+
       // Buscar tópicos do repositório
       const { data: topicsData } = await octokit.repos.getAllTopics({
         owner: GITHUB_USERNAME,
         repo: repo.name
       });
-      
+
       // Detectar tecnologias
       const technologies = new Set();
-      
+
       // Adicionar tecnologias com base nas linguagens
       Object.keys(languages).forEach(lang => {
         const techs = languageToTechMap[lang] || [lang];
         techs.forEach(tech => technologies.add(tech));
       });
-      
+
       // Adicionar tecnologias com base nos tópicos
       topicsData.names.forEach(topic => {
         const tech = topicToTechMap[topic];
         if (tech) technologies.add(tech);
       });
-      
+
       // Adicionar tecnologias com base no nome
       detectTechFromName(repo.name).forEach(tech => technologies.add(tech));
-      
+
       // Converter Set para Array e ordenar
       const techArray = Array.from(technologies).sort();
-      
-      return {
+
+      // Criar objeto base com informações comuns
+      const repoData = {
         name: repo.name,
         description: repo.description || `Repositório ${repo.name}`,
-        url: repo.html_url,
-        stars: repo.stargazers_count,
-        forks: repo.forks_count,
         technologies: techArray,
-        updated: repo.updated_at.split('T')[0]
+        updated: repo.updated_at.split('T')[0],
+        private: isPrivate
       };
+
+      // Adicionar informações específicas com base no tipo de repositório
+      if (isPrivate) {
+        // Para repositórios privados, incluir apenas informações básicas
+        return {
+          ...repoData,
+          stars: '🔒',
+          forks: '🔒'
+        };
+      } else {
+        // Para repositórios públicos, incluir todas as informações
+        return {
+          ...repoData,
+          url: repo.html_url,
+          stars: repo.stargazers_count,
+          forks: repo.forks_count
+        };
+      }
     }));
-    
+
     // Filtrar repositórios nulos (forks)
     const filteredRepos = processedRepos.filter(repo => repo !== null);
-    
+
     // Ordenar por data de atualização (mais recente primeiro)
     filteredRepos.sort((a, b) => new Date(b.updated) - new Date(a.updated));
-    
+
     // Ler o arquivo atual para preservar descrições personalizadas
     let currentReposData = [];
     try {
@@ -164,13 +185,13 @@ async function main() {
     } catch (error) {
       console.log('Arquivo de repositórios não encontrado ou inválido. Criando novo arquivo.');
     }
-    
+
     // Mesclar dados atuais com novos dados
     const mergedRepos = filteredRepos.map(newRepo => {
       const existingRepo = currentReposData.find(r => r.name === newRepo.name);
       if (existingRepo) {
-        // Preservar descrição personalizada se existir
-        return {
+        // Base para mesclar dados
+        const mergedRepo = {
           ...newRepo,
           description: existingRepo.description || newRepo.description,
           // Mesclar tecnologias
@@ -179,17 +200,30 @@ async function main() {
             ...(existingRepo.technologies || [])
           ])).sort()
         };
+
+        // Se o repositório é privado, preservar informações adicionais do existente
+        if (newRepo.private) {
+          // Manter a flag private
+          mergedRepo.private = true;
+
+          // Se havia uma URL personalizada no existente, mantê-la
+          if (existingRepo.customUrl) {
+            mergedRepo.customUrl = existingRepo.customUrl;
+          }
+        }
+
+        return mergedRepo;
       }
       return newRepo;
     });
-    
+
     // Gerar conteúdo do arquivo
     const fileContent = `// Dados dos repositórios
 const repositoriesData = ${JSON.stringify(mergedRepos, null, 2)};`;
-    
+
     // Escrever no arquivo
     fs.writeFileSync(REPOSITORIES_FILE_PATH, fileContent);
-    
+
     console.log('Dados dos repositórios atualizados com sucesso!');
   } catch (error) {
     console.error('Erro ao atualizar dados dos repositórios:', error);
