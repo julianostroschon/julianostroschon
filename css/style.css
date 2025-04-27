@@ -1,6 +1,7 @@
 :root {
   /* Cores principais */
   --primary-color: #4FC08D; /* Verde Vue.js */
+  --primary-color-rgb: 79, 192, 141; /* Valores RGB para efeitos de transparência */
   --secondary-color: #34495E;
   --accent-color: #42B883;
 
@@ -54,6 +55,7 @@
 
 html.dark-mode {
   --primary-color: #42B883;
+  --primary-color-rgb: 66, 184, 131; /* Valores RGB para efeitos de transparência no modo escuro */
   --secondary-color: #2C3E50;
   --accent-color: #3FB27F;
 
@@ -299,9 +301,56 @@ a:hover {
   gap: var(--spacing-md);
 }
 
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
 .section-header h3 {
   font-size: var(--font-size-xxl);
   color: var(--text-primary);
+  margin: 0;
+}
+
+/* Contador de repositórios */
+.repo-counter {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+  padding: 4px 10px;
+  border-radius: var(--border-radius-md);
+  transition: all var(--transition-fast);
+}
+
+.repo-count {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: var(--font-size-md);
+}
+
+.repo-total {
+  color: var(--text-light);
+}
+
+.repo-label {
+  margin-left: var(--spacing-xs);
+}
+
+.private-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  margin-left: var(--spacing-xs);
 }
 
 .filters {
@@ -372,6 +421,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   height: 100%;
+  min-height: 280px; /* Altura mínima padronizada */
+  max-height: 350px; /* Altura máxima padronizada */
 }
 
 .repo-card:hover {
@@ -400,10 +451,58 @@ a:hover {
   color: var(--text-light);
 }
 
-.repo-description {
-  color: var(--text-secondary);
+.repo-description-container {
+  position: relative;
   margin-bottom: var(--spacing-lg);
   flex-grow: 1;
+  overflow: hidden;
+}
+
+.repo-description {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  transition: max-height var(--transition-normal);
+  overflow: hidden;
+}
+
+.repo-description.truncated {
+  max-height: 4.5em; /* Aproximadamente 3 linhas de texto */
+  overflow: hidden;
+  position: relative;
+}
+
+.repo-description.truncated::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1.5em;
+  background: linear-gradient(to bottom, transparent, var(--bg-card));
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: var(--spacing-xs);
+  color: var(--primary-color);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+  user-select: none;
+}
+
+.read-more-btn:hover {
+  color: var(--accent-color);
+}
+
+.read-more-btn i {
+  margin-left: var(--spacing-xs);
+  transition: transform var(--transition-fast);
+}
+
+.read-more-btn.expanded i {
+  transform: rotate(180deg);
 }
 
 .repo-tech {
@@ -438,6 +537,87 @@ a:hover {
 
 .repo-updated {
   color: var(--text-light);
+}
+
+.repo-private {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-weight: 600;
+  color: var(--text-secondary);
+  background-color: rgba(var(--primary-color-rgb, 79, 192, 141), 0.1);
+  padding: 4px 8px;
+  border-radius: var(--border-radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.repo-private:hover {
+  background-color: rgba(var(--primary-color-rgb, 79, 192, 141), 0.2);
+}
+
+.repo-private i {
+  color: var(--primary-color);
+}
+
+/* Cursor especial para repositórios privados */
+.repo-card.private-repo {
+  cursor: pointer;
+}
+
+/* Estilo especial para cards de repositórios privados */
+.repo-card:has(.repo-private) {
+  position: relative;
+  overflow: hidden;
+}
+
+.repo-card:has(.repo-private)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 40px 40px 0;
+  border-color: transparent var(--primary-color) transparent transparent;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+/* Tooltip para repositórios privados */
+.repo-card:has(.repo-private)::after {
+  content: 'REPOSITÓRIO PRIVADO';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: var(--font-size-sm);
+  font-weight: bold;
+  transform: translateY(-100%);
+  transition: transform var(--transition-normal);
+  z-index: 2;
+}
+
+.repo-card:has(.repo-private):hover::after {
+  transform: translateY(0);
+}
+
+/* Classe para animação ao clicar */
+.repo-card.highlight-private {
+  animation: highlight-private 2s ease-in-out;
+}
+
+@keyframes highlight-private {
+  0%, 100% {
+    box-shadow: var(--shadow-sm);
+  }
+  20%, 80% {
+    box-shadow: 0 0 0 2px var(--primary-color), var(--shadow-lg);
+  }
 }
 
 .empty-state {
@@ -590,10 +770,20 @@ a:hover {
     align-items: flex-start;
   }
 
+  .header-title {
+    width: 100%;
+    margin-bottom: var(--spacing-md);
+    justify-content: space-between;
+  }
+
   .filters {
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .repo-counter {
+    font-size: var(--font-size-xs);
   }
 
   .search-box, .search-box input, .sort-options select {

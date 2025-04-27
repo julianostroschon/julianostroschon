@@ -60,7 +60,17 @@
     <section id="repositories" class="repositories">
       <div class="container">
         <div class="section-header">
-          <h3>Repositórios</h3>
+          <div class="header-title">
+            <h3>Repositórios</h3>
+            <div class="repo-counter">
+              <span class="repo-count">{{ filteredRepositories.length }}</span>
+              <span class="repo-total">/ {{ repositories.length }}</span>
+              <span class="repo-label">repositórios</span>
+              <span v-if="hasPrivateRepos" class="private-indicator" :title="`Inclui ${privateReposCount} repositório(s) privado(s)`">
+                <i class="fas fa-lock"></i>
+              </span>
+            </div>
+          </div>
           <div class="filters">
             <div class="search-box">
               <input type="text" v-model="searchQuery" placeholder="Buscar repositórios...">
@@ -77,7 +87,7 @@
         </div>
 
         <div class="repo-grid">
-          <div class="repo-card" v-for="repo in filteredRepositories" :key="repo.name">
+          <div class="repo-card" v-for="repo in filteredRepositories" :key="repo.name" :class="{ 'private-repo': repo.private }" @click="repo.private && highlightPrivateRepo($event)">
             <div class="repo-header">
               <h4 class="repo-title">{{ repo.name }}</h4>
               <div class="repo-stats">
@@ -85,12 +95,21 @@
                 <span class="repo-forks"><i class="fas fa-code-branch"></i> {{ repo.forks }}</span>
               </div>
             </div>
-            <p class="repo-description">{{ repo.description || 'Sem descrição disponível' }}</p>
+            <div class="repo-description-container">
+              <p class="repo-description" :class="{ 'truncated': !repo.expanded }" :id="'desc-' + repo.name">
+                {{ repo.description || 'Sem descrição disponível' }}
+              </p>
+              <div v-if="isDescriptionLong(repo.name)" class="read-more-btn" :class="{ 'expanded': repo.expanded }" @click.stop="toggleDescription(repo, $event)">
+                {{ repo.expanded ? 'Ver menos' : 'Ver mais' }}
+                <i class="fas" :class="repo.expanded ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+              </div>
+            </div>
             <div class="repo-tech">
               <span class="tech-tag" v-for="tech in repo.technologies" :key="tech">{{ tech }}</span>
             </div>
             <div class="repo-footer">
-              <a :href="repo.url" target="_blank" class="repo-link">Ver no GitHub <i class="fas fa-external-link-alt"></i></a>
+              <a v-if="!repo.private" :href="repo.url" target="_blank" class="repo-link">Ver no GitHub <i class="fas fa-external-link-alt"></i></a>
+              <span v-if="repo.private" class="repo-private"><i class="fas fa-lock"></i> Repositório Privado</span>
               <span class="repo-updated">Atualizado: {{ formatDate(repo.updated) }}</span>
             </div>
           </div>

@@ -57,6 +57,21 @@ const app = Vue.createApp({
       });
 
       return result;
+    },
+
+    // Verifica se existem repositórios privados
+    hasPrivateRepos() {
+      return this.repositories.some(repo => repo.private);
+    },
+
+    // Contagem de repositórios privados
+    privateReposCount() {
+      return this.repositories.filter(repo => repo.private).length;
+    },
+
+    // Contagem de repositórios públicos
+    publicReposCount() {
+      return this.repositories.filter(repo => !repo.private).length;
     }
   },
 
@@ -89,6 +104,100 @@ const app = Vue.createApp({
     formatDate(dateString) {
       const options = { year: 'numeric', month: 'short', day: 'numeric' };
       return new Date(dateString).toLocaleDateString('pt-BR', options);
+    },
+
+    // Verifica se a descrição é longa o suficiente para ser truncada
+    isDescriptionLong(repoName) {
+      // Verificar se o elemento existe no DOM
+      const descElement = document.getElementById(`desc-${repoName}`);
+      if (!descElement) return false;
+
+      // Comparar a altura do conteúdo com a altura visível
+      return descElement.scrollHeight > 72; // 4.5em em pixels (aproximadamente)
+    },
+
+    // Verifica o tamanho de todas as descrições
+    checkDescriptionLengths() {
+      this.repositories.forEach(repo => {
+        const descElement = document.getElementById(`desc-${repo.name}`);
+        if (descElement) {
+          // Armazenar a altura original para uso posterior
+          repo._scrollHeight = descElement.scrollHeight;
+        }
+      });
+    },
+
+    // Alterna entre descrição expandida e contraída
+    toggleDescription(repo, e) {
+      // Impedir a propagação do evento para evitar conflito com o clique no card
+      if (e) e.stopPropagation();
+
+      // Alternar o estado
+      repo.expanded = !repo.expanded;
+
+      // Aplicar a altura apropriada
+      this.$nextTick(() => {
+        const descElement = document.getElementById(`desc-${repo.name}`);
+        if (descElement) {
+          if (repo.expanded) {
+            // Quando expandido, definir a altura para acomodar todo o conteúdo
+            descElement.style.maxHeight = `${repo._scrollHeight}px`;
+          } else {
+            // Quando contraído, voltar para o valor padrão do CSS
+            descElement.style.maxHeight = '';
+          }
+        }
+      });
+    },
+
+    highlightPrivateRepo(event) {
+      // Obter o elemento do card
+      const card = event.currentTarget;
+
+      // Adicionar a classe para destacar
+      card.classList.add('highlight-private');
+
+      // Mostrar uma mensagem de alerta
+      const privateMessage = document.createElement('div');
+      privateMessage.className = 'private-message';
+      privateMessage.innerHTML = '<i class="fas fa-lock"></i> Este é um repositório privado';
+      privateMessage.style.position = 'fixed';
+      privateMessage.style.top = '20px';
+      privateMessage.style.left = '50%';
+      privateMessage.style.transform = 'translateX(-50%)';
+      privateMessage.style.backgroundColor = 'var(--primary-color)';
+      privateMessage.style.color = 'white';
+      privateMessage.style.padding = '10px 20px';
+      privateMessage.style.borderRadius = '4px';
+      privateMessage.style.boxShadow = 'var(--shadow-md)';
+      privateMessage.style.zIndex = '1000';
+      privateMessage.style.display = 'flex';
+      privateMessage.style.alignItems = 'center';
+      privateMessage.style.gap = '8px';
+      privateMessage.style.fontSize = '14px';
+      privateMessage.style.fontWeight = 'bold';
+      privateMessage.style.opacity = '0';
+      privateMessage.style.transition = 'opacity 0.3s ease';
+
+      document.body.appendChild(privateMessage);
+
+      // Animar a entrada da mensagem
+      setTimeout(() => {
+        privateMessage.style.opacity = '1';
+      }, 10);
+
+      // Remover a mensagem após 3 segundos
+      setTimeout(() => {
+        privateMessage.style.opacity = '0';
+        setTimeout(() => {
+          document.body.removeChild(privateMessage);
+        }, 300);
+      }, 3000);
+
+      // Remover a classe de destaque após a animação
+      setTimeout(() => {
+        card.classList.remove('highlight-private');
+      }, 2000);
     }
   },
 
@@ -103,8 +212,23 @@ const app = Vue.createApp({
       document.documentElement.classList.add('dark-mode');
     }
 
-    // Carregar repositórios
-    this.repositories = repositoriesData;
+    // Carregar repositórios e adicionar propriedade expanded
+    this.repositories = repositoriesData.map(repo => ({
+      ...repo,
+      expanded: false // Inicialmente, todas as descrições estão contraídas
+    }));
+
+    // Verificar o tamanho das descrições após a renderização
+    this.$nextTick(() => {
+      this.checkDescriptionLengths();
+    });
+  },
+
+  updated() {
+    // Verificar novamente quando os dados são atualizados
+    this.$nextTick(() => {
+      this.checkDescriptionLengths();
+    });
   }
 });
 
