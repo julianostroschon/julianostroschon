@@ -15,6 +15,18 @@ const repositoriesData = [
     "forks": 0
   },
   {
+    "name": "backup",
+    "description": "Repositório backup",
+    "technologies": [
+      "Shell"
+    ],
+    "updated": "2025-04-28",
+    "private": false,
+    "url": "https://github.com/julianostroschon/backup",
+    "stars": 0,
+    "forks": 0
+  },
+  {
     "name": "front-vite-quasar",
     "description": "Um template moderno para desenvolvimento frontend com Vue 3, Vite, TypeScript e Quasar Framework. Inclui roteamento baseado em arquivos, importação automática de componentes, gerenciamento de estado com Pinia e suporte a i18n.",
     "technologies": [
@@ -34,18 +46,6 @@ const repositoriesData = [
     "url": "https://github.com/julianostroschon/front-vite-quasar",
     "stars": 1,
     "forks": 2
-  },
-  {
-    "name": "backup",
-    "description": "Repositório backup",
-    "technologies": [
-      "Shell"
-    ],
-    "updated": "2025-04-22",
-    "private": false,
-    "url": "https://github.com/julianostroschon/backup",
-    "stars": 0,
-    "forks": 0
   },
   {
     "name": "front-default",
