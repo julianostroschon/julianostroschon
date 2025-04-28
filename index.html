@@ -105,7 +105,7 @@
               </div>
             </div>
             <div class="repo-tech">
-              <span class="tech-tag" v-for="tech in repo.technologies" :key="tech">{{ tech }}</span>
+              <span class="tech-tag" v-for="tech in repo.technologies" :key="tech" :data-tech="tech">{{ tech }}</span>
             </div>
             <div class="repo-footer">
               <a v-if="!repo.private" :href="repo.url" target="_blank" class="repo-link">Ver no GitHub <i class="fas fa-external-link-alt"></i></a>
