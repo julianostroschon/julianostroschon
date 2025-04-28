@@ -5,6 +5,179 @@
   --secondary-color: #34495E;
   --accent-color: #42B883;
 
+  /* Cores de tecnologias */
+  --color-javascript: #F7DF1E;
+  --color-typescript: #3178C6;
+  --color-vuejs: #4FC08D;
+  --color-react: #61DAFB;
+  --color-angular: #DD0031;
+  --color-nodejs: #339933;
+  --color-python: #3776AB;
+  --color-go: #00ADD8;
+  --color-java: #007396;
+  --color-csharp: #239120;
+  --color-php: #777BB4;
+  --color-ruby: #CC342D;
+  --color-rust: #000000;
+  --color-swift: #FA7343;
+  --color-kotlin: #7F52FF;
+  --color-dart: #0175C2;
+  --color-flutter: #02569B;
+  --color-html: #E34F26;
+  --color-css: #1572B6;
+  --color-sass: #CC6699;
+  --color-docker: #2496ED;
+  --color-kubernetes: #326CE5;
+  --color-aws: #FF9900;
+  --color-azure: #0078D4;
+  --color-gcp: #4285F4;
+  --color-firebase: #FFCA28;
+  --color-graphql: #E10098;
+  --color-mongodb: #47A248;
+  --color-mysql: #4479A1;
+  --color-postgresql: #336791;
+  --color-redis: #DC382D;
+  --color-git: #F05032;
+  --color-github: #181717;
+  --color-gitlab: #FCA121;
+  --color-bitbucket: #0052CC;
+  --color-jenkins: #D24939;
+  --color-jira: #0052CC;
+  --color-confluence: #172B4D;
+  --color-vscode: #007ACC;
+  --color-intellij: #000000;
+  --color-android: #3DDC84;
+  --color-ios: #000000;
+  --color-linux: #FCC624;
+  --color-windows: #0078D6;
+  --color-macos: #000000;
+  --color-ubuntu: #E95420;
+  --color-debian: #A81D33;
+  --color-centos: #262577;
+  --color-fedora: #294172;
+  --color-alpine: #0D597F;
+  --color-nginx: #009639;
+  --color-apache: #D22128;
+  --color-webpack: #8DD6F9;
+  --color-babel: #F9DC3E;
+  --color-eslint: #4B32C3;
+  --color-prettier: #F7B93E;
+  --color-jest: #C21325;
+  --color-mocha: #8D6748;
+  --color-cypress: #17202C;
+  --color-selenium: #43B02A;
+  --color-storybook: #FF4785;
+  --color-figma: #F24E1E;
+  --color-sketch: #F7B500;
+  --color-adobe: #FF0000;
+  --color-photoshop: #31A8FF;
+  --color-illustrator: #FF9A00;
+  --color-xd: #FF61F6;
+  --color-bootstrap: #7952B3;
+  --color-tailwind: #38B2AC;
+  --color-material: #0081CB;
+  --color-ant-design: #0170FE;
+  --color-chakra: #319795;
+  --color-styledcomponents: #DB7093;
+  --color-redux: #764ABC;
+  --color-mobx: #FF9955;
+  --color-vuex: #4FC08D;
+  --color-pinia: #FFE873;
+  --color-nextjs: #000000;
+  --color-nuxtjs: #00C58E;
+  --color-gatsby: #663399;
+  --color-svelte: #FF3E00;
+  --color-deno: #000000;
+  --color-electron: #47848F;
+  --color-express: #000000;
+  --color-fastify: #000000;
+  --color-nestjs: #E0234E;
+  --color-spring: #6DB33F;
+  --color-django: #092E20;
+  --color-flask: #000000;
+  --color-laravel: #FF2D20;
+  --color-symfony: #000000;
+  --color-rails: #CC0000;
+  --color-dotnet: #512BD4;
+  --color-unity: #000000;
+  --color-unreal: #0E1128;
+  --color-godot: #478CBF;
+  --color-tensorflow: #FF6F00;
+  --color-pytorch: #EE4C2C;
+  --color-pandas: #150458;
+  --color-numpy: #013243;
+  --color-jupyter: #F37626;
+  --color-r: #276DC3;
+  --color-rstudio: #75AADB;
+  --color-d3: #F9A03C;
+  --color-three: #000000;
+  --color-webgl: #990000;
+  --color-opengl: #5586A4;
+  --color-webrtc: #333333;
+  --color-socketio: #010101;
+  --color-rest: #0096D6;
+  --color-soap: #4A154B;
+  --color-grpc: #244B5A;
+  --color-kafka: #000000;
+  --color-rabbitmq: #FF6600;
+  --color-activemq: #E93A40;
+  --color-celery: #37814A;
+  --color-redis-queue: #DC382D;
+  --color-bull: #CD0000;
+  --color-elasticsearch: #005571;
+  --color-solr: #D9411E;
+  --color-algolia: #5468FF;
+  --color-neo4j: #008CC1;
+  --color-cassandra: #1287B1;
+  --color-couchbase: #EA2328;
+  --color-couchdb: #E42528;
+  --color-dynamodb: #4053D6;
+  --color-cosmosdb: #0078D4;
+  --color-firestore: #FFCA28;
+  --color-realm: #39477F;
+  --color-sqlite: #003B57;
+  --color-mariadb: #003545;
+  --color-oracle: #F80000;
+  --color-mssql: #CC2927;
+  --color-supabase: #3ECF8E;
+  --color-hasura: #1EB4D4;
+  --color-prisma: #2D3748;
+  --color-sequelize: #52B0E7;
+  --color-typeorm: #E83524;
+  --color-mongoose: #880000;
+  --color-hibernate: #59666C;
+  --color-jpa: #6DB33F;
+  --color-spring-data: #6DB33F;
+  --color-spring-boot: #6DB33F;
+  --color-spring-cloud: #6DB33F;
+  --color-spring-security: #6DB33F;
+  --color-quarkus: #4695EB;
+  --color-micronaut: #000000;
+  --color-helidon: #F7941E;
+  --color-ktor: #7F52FF;
+  --color-actix: #000000;
+  --color-rocket: #D33847;
+  --color-axum: #000000;
+  --color-warp: #000000;
+  --color-gin: #00ADD8;
+  --color-echo: #00ADD8;
+  --color-fiber: #00ADD8;
+  --color-chi: #00ADD8;
+  --color-gorilla: #00ADD8;
+  --color-flask-restful: #000000;
+  --color-django-rest-framework: #A30000;
+  --color-fastapi: #009688;
+  --color-tornado: #000000;
+  --color-aiohttp: #000000;
+  --color-sanic: #000000;
+  --color-quasar: #1976D2;
+  --color-vite: #646CFF;
+  --color-api: #0096D6;
+
+  /* Cores de ícones */
+  --color-star: #FFD700; /* Dourado */
+  --color-fork: #6E5494; /* Roxo do GitHub */
+
   /* Cores de texto */
   --text-primary: #2c3e50;
   --text-secondary: #606266;
@@ -417,17 +590,37 @@ a:hover {
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-sm);
   padding: var(--spacing-lg);
-  transition: all var(--transition-fast);
+  transition: all var(--transition-normal);
   display: flex;
   flex-direction: column;
   height: 100%;
   min-height: 280px; /* Altura mínima padronizada */
   max-height: 350px; /* Altura máxima padronizada */
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.repo-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, transparent 0%, transparent 50%, rgba(var(--primary-color-rgb), 0.1) 100%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity var(--transition-normal);
 }
 
 .repo-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-md);
+}
+
+.repo-card:hover::before {
+  opacity: 1;
 }
 
 .repo-header {
@@ -442,6 +635,11 @@ a:hover {
   font-weight: 600;
   color: var(--text-primary);
   margin-right: var(--spacing-sm);
+  transition: color var(--transition-fast);
+}
+
+.repo-card:hover .repo-title {
+  color: var(--primary-color);
 }
 
 .repo-stats {
@@ -449,6 +647,19 @@ a:hover {
   gap: var(--spacing-sm);
   font-size: var(--font-size-xs);
   color: var(--text-light);
+}
+
+/* Estilos para ícones de estrelas e forks */
+.repo-stars i, .repo-forks i {
+  transition: color var(--transition-fast);
+}
+
+.repo-card:hover .repo-stars i {
+  color: var(--color-star);
+}
+
+.repo-card:hover .repo-forks i {
+  color: var(--color-fork);
 }
 
 .repo-description-container {
@@ -518,7 +729,185 @@ a:hover {
   background-color: var(--bg-secondary);
   color: var(--text-secondary);
   border-radius: var(--border-radius-sm);
-  transition: background-color var(--transition-fast);
+  transition: all var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Estilos para tecnologias específicas quando o mouse está sobre o card */
+.repo-card:hover .tech-tag[data-tech="JavaScript"],
+.tech-tag[data-tech="JavaScript"]:hover {
+  background-color: var(--color-javascript);
+  color: #000;
+}
+
+.repo-card:hover .tech-tag[data-tech="TypeScript"],
+.tech-tag[data-tech="TypeScript"]:hover {
+  background-color: var(--color-typescript);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="Vue.js"],
+.tech-tag[data-tech="Vue.js"]:hover {
+  background-color: var(--color-vuejs);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="React"],
+.tech-tag[data-tech="React"]:hover {
+  background-color: var(--color-react);
+  color: #282c34;
+}
+
+.repo-card:hover .tech-tag[data-tech="Angular"],
+.tech-tag[data-tech="Angular"]:hover {
+  background-color: var(--color-angular);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="Node.js"],
+.tech-tag[data-tech="Node.js"]:hover {
+  background-color: var(--color-nodejs);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="Python"],
+.tech-tag[data-tech="Python"]:hover {
+  background-color: var(--color-python);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="Java"],
+.tech-tag[data-tech="Java"]:hover {
+  background-color: var(--color-java);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="C#"],
+.tech-tag[data-tech="C#"]:hover {
+  background-color: var(--color-csharp);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="PHP"],
+.tech-tag[data-tech="PHP"]:hover {
+  background-color: var(--color-php);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="HTML"],
+.tech-tag[data-tech="HTML"]:hover {
+  background-color: var(--color-html);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="CSS"],
+.tech-tag[data-tech="CSS"]:hover {
+  background-color: var(--color-css);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="SASS"],
+.tech-tag[data-tech="SASS"]:hover {
+  background-color: var(--color-sass);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="Docker"],
+.tech-tag[data-tech="Docker"]:hover {
+  background-color: var(--color-docker);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="Kubernetes"],
+.tech-tag[data-tech="Kubernetes"]:hover {
+  background-color: var(--color-kubernetes);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="AWS"],
+.tech-tag[data-tech="AWS"]:hover {
+  background-color: var(--color-aws);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="Azure"],
+.tech-tag[data-tech="Azure"]:hover {
+  background-color: var(--color-azure);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="GCP"],
+.tech-tag[data-tech="GCP"]:hover {
+  background-color: var(--color-gcp);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="Firebase"],
+.tech-tag[data-tech="Firebase"]:hover {
+  background-color: var(--color-firebase);
+  color: #333;
+}
+
+.repo-card:hover .tech-tag[data-tech="GraphQL"],
+.tech-tag[data-tech="GraphQL"]:hover {
+  background-color: var(--color-graphql);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="MongoDB"],
+.tech-tag[data-tech="MongoDB"]:hover {
+  background-color: var(--color-mongodb);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="MySQL"],
+.tech-tag[data-tech="MySQL"]:hover {
+  background-color: var(--color-mysql);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="PostgreSQL"],
+.tech-tag[data-tech="PostgreSQL"]:hover {
+  background-color: var(--color-postgresql);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="Redis"],
+.tech-tag[data-tech="Redis"]:hover {
+  background-color: var(--color-redis);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="Git"],
+.tech-tag[data-tech="Git"]:hover {
+  background-color: var(--color-git);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="GitHub"],
+.tech-tag[data-tech="GitHub"]:hover {
+  background-color: var(--color-github);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="GitLab"],
+.tech-tag[data-tech="GitLab"]:hover {
+  background-color: var(--color-gitlab);
+  color: white;
+}
+
+.repo-card:hover .tech-tag[data-tech="API"],
+.tech-tag[data-tech="API"]:hover {
+  background-color: var(--color-api);
+  color: white;
+}
+
+/* Estilo padrão para outras tecnologias */
+.repo-card:hover .tech-tag:not([data-tech]),
+.tech-tag:not([data-tech]):hover {
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .repo-footer {
