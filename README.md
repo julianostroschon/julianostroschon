@@ -41,11 +41,6 @@ Sou um **Tech Lead** e **Desenvolvedor Full-Stack** baseado em Santo Ângelo, RS
 [![Top Linguagens](https://github-readme-stats.vercel.app/api/top-langs/?username=julianostroschon&layout=compact&theme=radical&hide_border=true)](https://github.com/julianostroschon)
 ---
 
-### 🐍 Gráfico de Contribuição
-
-![Gráfico de Contribuição](https://raw.githubusercontent.com/julianostroschon/julianostroschon/main/dist/github-contribution-grid-snake-dark.svg)
----
-
 * 📫 Como me encontrar: [julianostroschon@gmail.com](mailto:julianostroschon@gmail.com)
 * 🔗 GitHub: [https://github.com/julianostroschon](https://github.com/julianostroschon)
 ---
