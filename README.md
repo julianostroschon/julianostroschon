@@ -61,6 +61,8 @@ Meu portfólio de projetos está disponível em [https://julianostroschon.github
 - 🔍 **Filtragem e Busca**: Filtre repositórios por tecnologia ou busque por nome/descrição
 - 📱 **Design Responsivo**: Funciona em dispositivos móveis, tablets e desktops
 - ⚡ **Reatividade com Vue.js**: Interface reativa e dinâmica
+- 📊 **Contador de Repositórios**: Mostra quantos repositórios estão sendo exibidos
+- 📝 **Descrições Expandíveis**: Cards com tamanho padronizado e botão "Ver mais" para descrições longas
 <!--
 ## Social Medias
 

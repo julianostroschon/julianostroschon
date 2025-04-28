@@ -78,23 +78,27 @@ async function main() {
   try {
     console.log('Iniciando atualização dos dados dos repositórios...');
 
-    // Inicializar Octokit
-    const octokit = new Octokit({
-      auth: GITHUB_TOKEN
-    });
+    // Inicializar Octokit sem autenticação para garantir que funcione
+    const octokit = new Octokit();
 
-    // Buscar todos os repositórios do usuário (incluindo privados)
-    console.log(`Buscando repositórios para o usuário: ${GITHUB_USERNAME}`);
-    const { data: repos } = await octokit.repos.listForAuthenticatedUser({
-      sort: 'updated',
-      per_page: 100,
-      affiliation: 'owner'
-    });
+    let userRepos = [];
 
-    // Filtrar apenas os repositórios do usuário especificado
-    const userRepos = repos.filter(repo => repo.owner.login === GITHUB_USERNAME);
+    // Buscar apenas repositórios públicos (funciona sempre)
+    console.log(`Buscando repositórios públicos para o usuário: ${GITHUB_USERNAME}`);
 
-    console.log(`Encontrados ${userRepos.length} repositórios (incluindo privados).`);
+    try {
+      const { data: publicRepos } = await octokit.repos.listForUser({
+        username: GITHUB_USERNAME,
+        sort: 'updated',
+        per_page: 100
+      });
+
+      userRepos = publicRepos;
+      console.log(`Encontrados ${userRepos.length} repositórios públicos.`);
+    } catch (error) {
+      console.error(`Erro ao buscar repositórios: ${error.message}`);
+      process.exit(1);
+    }
 
     // Processar cada repositório
     const processedRepos = await Promise.all(userRepos.map(async (repo) => {
