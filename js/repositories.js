@@ -8,25 +8,11 @@ const repositoriesData = [
       "HTML",
       "JavaScript"
     ],
-    "updated": "2025-04-26",
+    "updated": "2025-04-28",
     "private": false,
     "url": "https://github.com/julianostroschon/julianostroschon",
     "stars": 2,
     "forks": 0
-  },
-  {
-    "name": "issue-voter",
-    "description": "Repositório issue-voter",
-    "technologies": [
-      "CSS",
-      "JavaScript",
-      "TypeScript",
-      "Vue.js"
-    ],
-    "updated": "2025-04-26",
-    "private": true,
-    "stars": "🔒",
-    "forks": "🔒"
   },
   {
     "name": "front-vite-quasar",
@@ -50,21 +36,6 @@ const repositoriesData = [
     "forks": 2
   },
   {
-    "name": "volei-torneio",
-    "description": "Repositório volei-torneio",
-    "technologies": [
-      "CSS",
-      "JavaScript",
-      "Shell",
-      "TypeScript",
-      "Vue.js"
-    ],
-    "updated": "2025-04-22",
-    "private": true,
-    "stars": "🔒",
-    "forks": "🔒"
-  },
-  {
     "name": "backup",
     "description": "Repositório backup",
     "technologies": [
@@ -75,60 +46,6 @@ const repositoriesData = [
     "url": "https://github.com/julianostroschon/backup",
     "stars": 0,
     "forks": 0
-  },
-  {
-    "name": "nuxtjs-graphql",
-    "description": "Repositório nuxtjs-graphql",
-    "technologies": [
-      "CSS",
-      "GraphQL",
-      "JavaScript",
-      "Shell",
-      "TypeScript",
-      "Vue.js"
-    ],
-    "updated": "2025-02-17",
-    "private": true,
-    "stars": "🔒",
-    "forks": "🔒"
-  },
-  {
-    "name": "nuxt-base",
-    "description": "Repositório nuxt-base",
-    "technologies": [
-      "JavaScript",
-      "TypeScript",
-      "Vue.js"
-    ],
-    "updated": "2025-02-17",
-    "private": true,
-    "stars": "🔒",
-    "forks": "🔒"
-  },
-  {
-    "name": "wpp-api",
-    "description": "Repositório wpp-api",
-    "technologies": [
-      "Docker",
-      "JavaScript",
-      "Procfile"
-    ],
-    "updated": "2024-12-07",
-    "private": true,
-    "stars": "🔒",
-    "forks": "🔒"
-  },
-  {
-    "name": "sender",
-    "description": "Repositório sender",
-    "technologies": [
-      "JavaScript",
-      "TypeScript"
-    ],
-    "updated": "2024-11-12",
-    "private": true,
-    "stars": "🔒",
-    "forks": "🔒"
   },
   {
     "name": "front-default",
@@ -169,18 +86,6 @@ const repositoriesData = [
     "forks": 1
   },
   {
-    "name": "d1-scheduler",
-    "description": "Repositório d1-scheduler",
-    "technologies": [
-      "JavaScript",
-      "TypeScript"
-    ],
-    "updated": "2024-09-09",
-    "private": true,
-    "stars": "🔒",
-    "forks": "🔒"
-  },
-  {
     "name": "back-default",
     "description": "Template para desenvolvimento de APIs backend com TypeScript, seguindo boas práticas de arquitetura e padrões de projeto.",
     "technologies": [
@@ -195,42 +100,6 @@ const repositoriesData = [
     "url": "https://github.com/julianostroschon/back-default",
     "stars": 0,
     "forks": 1
-  },
-  {
-    "name": "back-reservation",
-    "description": "Repositório back-reservation",
-    "technologies": [
-      "Shell",
-      "TypeScript"
-    ],
-    "updated": "2024-07-01",
-    "private": true,
-    "stars": "🔒",
-    "forks": "🔒"
-  },
-  {
-    "name": "environment",
-    "description": "Repositório environment",
-    "technologies": [],
-    "updated": "2024-06-10",
-    "private": true,
-    "stars": "🔒",
-    "forks": "🔒"
-  },
-  {
-    "name": "front-reservation",
-    "description": "Repositório front-reservation",
-    "technologies": [
-      "CSS",
-      "HTML",
-      "JavaScript",
-      "Sass",
-      "Vue.js"
-    ],
-    "updated": "2024-06-05",
-    "private": true,
-    "stars": "🔒",
-    "forks": "🔒"
   },
   {
     "name": "whatsapp-api-typescript",
@@ -332,21 +201,6 @@ const repositoriesData = [
     "forks": 0
   },
   {
-    "name": "back-type-graphql",
-    "description": "Repositório back-type-graphql",
-    "technologies": [
-      "Docker",
-      "GraphQL",
-      "JavaScript",
-      "Shell",
-      "TypeScript"
-    ],
-    "updated": "2023-11-13",
-    "private": true,
-    "stars": "🔒",
-    "forks": "🔒"
-  },
-  {
     "name": "curso-go",
     "description": "Repositório com exemplos e exercícios do curso de Go, explorando os fundamentos da linguagem e padrões de desenvolvimento.",
     "technologies": [
@@ -372,20 +226,6 @@ const repositoriesData = [
     "url": "https://github.com/julianostroschon/first-app",
     "stars": 1,
     "forks": 0
-  },
-  {
-    "name": "nuxt-project",
-    "description": "Repositório nuxt-project",
-    "technologies": [
-      "CSS",
-      "JavaScript",
-      "TypeScript",
-      "Vue.js"
-    ],
-    "updated": "2023-04-28",
-    "private": true,
-    "stars": "🔒",
-    "forks": "🔒"
   },
   {
     "name": "vitesse",
@@ -444,18 +284,5 @@ const repositoriesData = [
     "url": "https://github.com/julianostroschon/application-standard",
     "stars": 0,
     "forks": 1
-  },
-  {
-    "name": "JS",
-    "description": "Repositório JS",
-    "technologies": [
-      "CSS",
-      "HTML",
-      "JavaScript"
-    ],
-    "updated": "2021-11-24",
-    "private": true,
-    "stars": "🔒",
-    "forks": "🔒"
   }
 ];
