@@ -1,6 +1,20 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "julianostroschon",
+    "description": "Config files for my GitHub profile.",
+    "technologies": [
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "updated": "2025-04-30",
+    "private": false,
+    "url": "https://github.com/julianostroschon/julianostroschon",
+    "stars": 2,
+    "forks": 0
+  },
+  {
     "name": "web-scraping-andrinho",
     "description": "Repositório web-scraping-andrinho",
     "technologies": [
@@ -10,20 +24,6 @@ const repositoriesData = [
     "private": false,
     "url": "https://github.com/julianostroschon/web-scraping-andrinho",
     "stars": 0,
-    "forks": 0
-  },
-  {
-    "name": "julianostroschon",
-    "description": "Config files for my GitHub profile.",
-    "technologies": [
-      "CSS",
-      "HTML",
-      "JavaScript"
-    ],
-    "updated": "2025-04-28",
-    "private": false,
-    "url": "https://github.com/julianostroschon/julianostroschon",
-    "stars": 2,
     "forks": 0
   },
   {
