@@ -8,7 +8,7 @@ const repositoriesData = [
       "HTML",
       "JavaScript"
     ],
-    "updated": "2025-04-30",
+    "updated": "2025-05-01",
     "private": false,
     "url": "https://github.com/julianostroschon/julianostroschon",
     "stars": 2,
