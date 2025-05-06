@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Juliano Stroschön</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --secondary: #f5f7fa;
+            --accent: #22223b;
+            --text: #22223b;
+            --muted: #6c757d;
+            --card-bg: #fff;
+            --shadow: 0 4px 24px rgba(30, 34, 90, 0.08);
+        }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: var(--secondary);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            border-radius: 18px;
+            box-shadow: var(--shadow);
+            padding: 40px 32px 32px 32px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 36px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 18px;
+        }
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8em;
+            letter-spacing: 2px;
+            color: var(--accent);
+            margin: 0;
+        }
+        header .subtitle {
+            font-size: 1.2em;
+            color: var(--primary);
+            font-weight: 600;
+            margin-top: 8px;
+            letter-spacing: 1px;
+        }
+        .contact-info {
+            margin-top: 18px;
+            font-size: 1em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 18px;
+        }
+        .contact-info p, .contact-info a {
+            margin: 0;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4em;
+            color: var(--primary);
+            border-left: 5px solid var(--primary);
+            padding-left: 12px;
+            margin-top: 32px;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+        }
+        .section {
+            margin-bottom: 28px;
+        }
+        .about-me p {
+            font-size: 1.08em;
+            color: var(--text);
+            margin-bottom: 10px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 2.2fr 1fr;
+            gap: 36px;
+        }
+        .main-content {
+            min-width: 0;
+        }
+        .education-item, .experience-item {
+            background: var(--secondary);
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(30,34,90,0.04);
+            padding: 18px 20px 12px 20px;
+            margin-bottom: 18px;
+            transition: box-shadow 0.2s;
+        }
+        .education-item:hover, .experience-item:hover {
+            box-shadow: 0 6px 24px rgba(30,34,90,0.10);
+        }
+        .education-item h3, .experience-item h3 {
+            font-size: 1.1em;
+            margin-bottom: 4px;
+            color: var(--accent);
+            font-weight: 600;
+        }
+        .education-item .institution, .experience-item .company {
+            font-style: italic;
+            color: var(--primary);
+            margin-bottom: 2px;
+            font-size: 1em;
+        }
+        .education-item .period, .experience-item .period {
+            font-size: 0.95em;
+            color: var(--muted);
+            margin-bottom: 7px;
+        }
+        .experience-item p {
+            margin-bottom: 0;
+            font-size: 1em;
+        }
+        .sidebar {
+            position: relative;
+        }
+        .expertise {
+            background: var(--secondary);
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(30,34,90,0.04);
+            padding: 18px 20px 12px 20px;
+        }
+        .expertise-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .expertise-list li {
+            background: var(--primary);
+            color: #fff;
+            padding: 7px 14px;
+            border-radius: 16px;
+            font-size: 0.98em;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 500;
+            box-shadow: 0 1px 4px rgba(30,34,90,0.06);
+        }
+        .expertise-list li::before {
+            font-size: 1em;
+        }
+        @media (max-width: 900px) {
+            .container {
+                padding: 18px 6px;
+            }
+            .grid-container {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+            .sidebar {
+                margin-top: 32px;
+            }
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.1em;
+            }
+            .container {
+                padding: 6px 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JULIANO STROSCHÖN</h1>
+            <p class="subtitle">Tech Lead | Desenvolvedor</p>
+            <div class="contact-info">
+                <p>📎 <a href="https://github.com/julianostroschon" target="_blank">github.com/julianostroschon</a></p>
+                <p>📱 55 99692-9042</p>
+                <p>✉️ <a href="mailto:julianostroschon@gmail.com">julianostroschon@gmail.com</a></p>
+                <p>📍 Santo Ângelo, RS</p>
+            </div>
+        </header>
+
+        <section class="section about-me">
+            <h2>Sobre Mim</h2>
+            <p>Profissional com sólida experiência em liderança de equipes e gestão de pessoas. Atuei como gestor de Informática durante 8 anos como Oficial no Exército Brasileiro e, nos últimos 2 anos, exerço papel de liderança em times de desenvolvimento de software. Experiência prática em DevOps, atuando em múltiplas aplicações e ambientes. </p>
+            <p>Ao longo da carreira, trabalhei com tecnologias como KnexJS, VueJS (v2 e v3), Vuex, PiniaStore, JavaScript, TypeScript, GraphQL, PostgreSQL, Docker, entre outras, contribuindo para projetos de alto impacto e inovação.</p>
+        </section>
+
+        <div class="grid-container">
+            <div class="main-content">
+                <section class="section education">
+                    <h2>Educação</h2>
+                    <div class="education-item">
+                        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Logo_Anhanguera_Educacional.png" alt="Anhanguera" style="height:32px;float:right;"> -->
+                        <h3>DevOps</h3>
+                        <p class="institution">Anhanguera</p>
+                        <p class="period">2024 - 2026</p>
+                    </div>
+                    <div class="education-item">
+                        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Logo_unipampa.png" alt="Unipampa" style="height:32px;float:right;"> -->
+                        <h3>Ciência da Computação</h3>
+                        <p class="institution">Unipampa - Alegrete</p>
+                        <p class="period">2014 - 2020 (10 semestres concluídos)</p>
+                    </div>
+                </section>
+
+                <section class="section experience">
+                    <h2>Experiência Profissional</h2>
+                    <div class="experience-item">
+                        <!-- <img src="https://partithura.com.br/wp-content/uploads/2022/09/logo-partithura.png" alt="Partithura" style="height:32px;float:right;"> -->
+                        <h3>Tech Lead | DevOps</h3>
+                        <p class="company">Partithura - Porto Alegre, RS</p>
+                        <p class="period">Nov 2023 - Atual</p>
+                        <p>Responsável pela gestão dos serviços em produção e coordenação das tarefas do time de desenvolvimento interno e terceirizados, promovendo boas práticas DevOps e entregas contínuas.</p>
+                    </div>
+                    <div class="experience-item">
+                        <!-- <img src="https://www.fundimisa.com.br/assets/img/logo.png" alt="Fundimisa" style="height:32px;float:right;"> -->
+                        <h3>Desenvolvedor | Tech Lead</h3>
+                        <p class="company">Fundimisa - Santo Ângelo, RS</p>
+                        <p class="period">Nov 2021 - Nov 2023</p>
+                        <p>Atuação como desenvolvedor fullstack (NodeJS) e, posteriormente, Tech Lead. Gerenciei o programa de estagiários, promovi integração do time e mantive contato direto com clientes e gestores externos.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Desenvolvedor FullStack</h3>
+                        <p class="company">Autônomo</p>
+                        <p class="period">Jul 2020 - Nov 2021</p>
+                        <p>Desenvolvimento de sistemas de gestão para pequenos negócios e aprendizado de novas linguagens e frameworks.</p>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="sidebar">
+                <section class="section expertise">
+                    <h2>Expertise</h2>
+                    <ul class="expertise-list" style="flex-direction: column;gap:12px;">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS" style="height:20px;"> NodeJS</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL" style="height:20px;"> GraphQL</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="VueJS" style="height:20px;"> VueJS</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Typescript" style="height:20px;"> Typescript</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" style="height:20px;"> Docker</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" style="height:20px;"> PostgreSQL</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" style="height:20px;"> JavaScript</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/knexjs/knexjs-original.svg" alt="KnexJS" style="height:20px;"> KnexJS</li>
+                        <li><img src="https://github.com/devicons/devicon/tree/v2.16.0/icons/vuex/vuex-original.svg" alt="Vuex" style="height:20px;"> Vuex</li>
+                        <li><img src="https://img.shields.io/badge/PiniaStore-yellow?logo=pinia&logoColor=white" alt="PiniaStore" style="height:20px;"> PiniaStore</li>
+                        <li><img src="https://img.shields.io/badge/DevOps-blue?logo=dev.to&logoColor=white" alt="DevOps" style="height:20px;"> DevOps</li>
+                    </ul>
+                </section>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>
