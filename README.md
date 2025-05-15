@@ -35,12 +35,6 @@ Sou um **Tech Lead** e **Desenvolvedor Full-Stack** baseado em Santo Ângelo, RS
 
 ---
 
-### 📊 Minhas Estatísticas no GitHub
-
-[![Estatísticas de Juliano Stroschön no GitHub](https://github-readme-stats.vercel.app/api?username=julianostroschon&show_icons=true&theme=radical&count_private=true&hide_border=true)](https://github.com/julianostroschon)
-[![Top Linguagens](https://github-readme-stats.vercel.app/api/top-langs/?username=julianostroschon&layout=compact&theme=radical&hide_border=true)](https://github.com/julianostroschon)
----
-
 * 📫 Como me encontrar: [julianostroschon@gmail.com](mailto:julianostroschon@gmail.com)
 * 🔗 GitHub: [https://github.com/julianostroschon](https://github.com/julianostroschon)
 ---
@@ -58,17 +52,3 @@ Meu portfólio de projetos está disponível em [https://julianostroschon.github
 - ⚡ **Reatividade com Vue.js**: Interface reativa e dinâmica
 - 📊 **Contador de Repositórios**: Mostra quantos repositórios estão sendo exibidos
 - 📝 **Descrições Expandíveis**: Cards com tamanho padronizado e botão "Ver mais" para descrições longas
-<!--
-## Social Medias
-
-<div style="display: block;">
-  <a href="https://www.linkedin.com/in/juliano-stroschon-a199211ab/">
-    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://www.instagram.com/julianostroschon/" >
-    <img src="https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white">
-  </a>
-  <a href="https://www.facebook.com/julianostroschon">
-    <img src="https://img.shields.io/badge/facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white">
-  </a>
-</div> -->
