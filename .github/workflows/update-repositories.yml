@@ -17,6 +17,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Fetch repository data
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+        run: |
+          node .github/scripts/update-repositories.js
+
       - name: Checkout repository
         uses: actions/checkout@v3
 

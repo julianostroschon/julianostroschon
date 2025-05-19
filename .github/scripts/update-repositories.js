@@ -78,26 +78,51 @@ async function main() {
   try {
     console.log('Iniciando atualização dos dados dos repositórios...');
 
-    // Inicializar Octokit sem autenticação para garantir que funcione
-    const octokit = new Octokit();
+    // Inicializar Octokit com autenticação se o token estiver disponível
+    const octokit = GITHUB_TOKEN ? new Octokit({ auth: GITHUB_TOKEN }) : new Octokit();
 
     let userRepos = [];
 
-    // Buscar apenas repositórios públicos (funciona sempre)
-    console.log(`Buscando repositórios públicos para o usuário: ${GITHUB_USERNAME}`);
-
-    try {
-      const { data: publicRepos } = await octokit.repos.listForUser({
-        username: GITHUB_USERNAME,
-        sort: 'updated',
-        per_page: 100
-      });
-
-      userRepos = publicRepos;
-      console.log(`Encontrados ${userRepos.length} repositórios públicos.`);
-    } catch (error) {
-      console.error(`Erro ao buscar repositórios: ${error.message}`);
-      process.exit(1);
+    // Buscar todos os repositórios do usuário autenticado (públicos e privados)
+    // Se não houver token, busca apenas públicos
+    if (GITHUB_TOKEN) {
+      console.log(`Buscando repositórios públicos e privados para o usuário autenticado.`);
+      try {
+        // Paginação para garantir que todos sejam buscados
+        let page = 1;
+        let repos = [];
+        let fetched;
+        do {
+          const { data } = await octokit.repos.listForAuthenticatedUser({
+            sort: 'updated',
+            per_page: 100,
+            page
+          });
+          fetched = data.length;
+          repos = repos.concat(data);
+          page++;
+        } while (fetched === 100);
+        userRepos = repos.filter(repo => repo.owner.login === GITHUB_USERNAME);
+        console.log(`Encontrados ${userRepos.length} repositórios (públicos e privados).`);
+      } catch (error) {
+        console.error(`Erro ao buscar repositórios autenticados: ${error.message}`);
+        process.exit(1);
+      }
+    } else {
+      // Sem token, busca apenas públicos
+      console.log(`Buscando repositórios públicos para o usuário: ${GITHUB_USERNAME}`);
+      try {
+        const { data: publicRepos } = await octokit.repos.listForUser({
+          username: GITHUB_USERNAME,
+          sort: 'updated',
+          per_page: 100
+        });
+        userRepos = publicRepos;
+        console.log(`Encontrados ${userRepos.length} repositórios públicos.`);
+      } catch (error) {
+        console.error(`Erro ao buscar repositórios: ${error.message}`);
+        process.exit(1);
+      }
     }
 
     // Processar cada repositório
@@ -111,16 +136,26 @@ async function main() {
       console.log(`Processando repositório: ${repo.name} (${isPrivate ? 'privado' : 'público'})`);
 
       // Buscar linguagens do repositório
-      const { data: languages } = await octokit.repos.listLanguages({
-        owner: GITHUB_USERNAME,
-        repo: repo.name
-      });
-
-      // Buscar tópicos do repositório
-      const { data: topicsData } = await octokit.repos.getAllTopics({
-        owner: GITHUB_USERNAME,
-        repo: repo.name
-      });
+      let languages = {};
+      let topicsData = { names: [] };
+      try {
+        const langResp = await octokit.repos.listLanguages({
+          owner: GITHUB_USERNAME,
+          repo: repo.name
+        });
+        languages = langResp.data;
+      } catch (e) {
+        // Pode falhar em privados sem permissão, ignora
+      }
+      try {
+        const topicsResp = await octokit.repos.getAllTopics({
+          owner: GITHUB_USERNAME,
+          repo: repo.name
+        });
+        topicsData = topicsResp.data;
+      } catch (e) {
+        // Pode falhar em privados sem permissão, ignora
+      }
 
       // Detectar tecnologias
       const technologies = new Set();
@@ -132,7 +167,7 @@ async function main() {
       });
 
       // Adicionar tecnologias com base nos tópicos
-      topicsData.names.forEach(topic => {
+      (topicsData.names || []).forEach(topic => {
         const tech = topicToTechMap[topic];
         if (tech) technologies.add(tech);
       });
@@ -146,7 +181,6 @@ async function main() {
       // Criar objeto base com informações comuns
       const repoData = {
         name: repo.name,
-        description: repo.description || `Repositório ${repo.name}`,
         technologies: techArray,
         updated: repo.updated_at.split('T')[0],
         private: isPrivate
@@ -154,16 +188,19 @@ async function main() {
 
       // Adicionar informações específicas com base no tipo de repositório
       if (isPrivate) {
-        // Para repositórios privados, incluir apenas informações básicas
+        // Para repositórios privados, expor apenas nome e tecnologias, bloquear o resto
         return {
           ...repoData,
+          description: '🔒 Repositório Privado',
           stars: '🔒',
-          forks: '🔒'
+          forks: '🔒',
+          url: null
         };
       } else {
         // Para repositórios públicos, incluir todas as informações
         return {
           ...repoData,
+          description: repo.description || `Repositório ${repo.name}`,
           url: repo.html_url,
           stars: repo.stargazers_count,
           forks: repo.forks_count
