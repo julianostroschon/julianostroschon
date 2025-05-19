@@ -49,8 +49,9 @@
       <div class="container">
         <h3>Tecnologias</h3>
         <div class="tech-grid">
-          <div class="tech-item" v-for="tech in technologies" :key="tech.name" @click="filterByTech(tech.name)">
-            <i :class="tech.icon"></i>
+          <div class="tech-item" v-for="tech in technologies" :key="tech.name" @click="filterByTech(tech.name)"
+            >
+            <i :class="tech.icon" :style="techColorStyle(tech.name)"></i>
             <span>{{ tech.name }}</span>
           </div>
         </div>
@@ -208,5 +209,41 @@
 
   <script src="js/repositories.js"></script>
   <script src="js/app.js"></script>
+<script>
+  // Função para aplicar cor de fundo baseada na tecnologia, disponível para Vue
+  const techColorVars = {
+    'JavaScript': '--color-javascript',
+    'TypeScript': '--color-typescript',
+    'Vue.js': '--color-vuejs',
+    'React': '--color-react',
+    'Angular': '--color-angular',
+    'Node.js': '--color-nodejs',
+    'Python': '--color-python',
+    'Go': '--color-go',
+    'HTML': '--color-html',
+    'CSS': '--color-css',
+    'Sass': '--color-sass',
+    'Docker': '--color-docker',
+    'GraphQL': '--color-graphql',
+    'Quasar': '--color-quasar',
+    'Vite': '--color-vite',
+    'API': '--color-api',
+    // Adicione mais se quiser
+  };
+  
+  // Adiciona ao app Vue
+  const originalCreateApp = window.Vue.createApp;
+  window.Vue.createApp = function(options) {
+    options.methods = options.methods || {};
+    options.methods.techColorStyle = function(techName) {
+      const cssVar = techColorVars[techName];
+      if (cssVar) {
+        return { backgroundColor: `var(${cssVar})`, color: techName === 'JavaScript' ? '#000' : '#fff' };
+      }
+      return {};
+    };
+    return originalCreateApp(options);
+  };
+</script>
 </body>
 </html>

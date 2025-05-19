@@ -1,7 +1,29 @@
 // Aplicação Vue.js
+const techColorVars = {
+    'JavaScript': '--color-javascript',
+    'TypeScript': '--color-typescript',
+    'Vue.js': '--color-vuejs',
+    'React': '--color-react',
+    'Angular': '--color-angular',
+    'Node.js': '--color-nodejs',
+    'Python': '--color-python',
+    'Go': '--color-go',
+    'HTML': '--color-html',
+    'CSS': '--color-css',
+    'Sass': '--color-sass',
+    'Docker': '--color-docker',
+    'GraphQL': '--color-graphql',
+    'Quasar': '--color-quasar',
+    'Vite': '--color-vite',
+    'API': '--color-api',
+    // Adicione mais se quiser
+  }
 const app = Vue.createApp({
+  // Mapeamento de cores para tecnologias
+  
   data() {
     return {
+      techColorVars,
       darkMode: false,
       repositories: [],
       searchQuery: '',
@@ -76,6 +98,13 @@ const app = Vue.createApp({
   },
 
   methods: {
+    techColorStyle(techName) {
+      const cssVar = this.techColorVars[techName];
+      if (cssVar) {
+        return { color: `var(${cssVar})` };
+      }
+      return {};
+    },
     toggleDarkMode() {
       this.darkMode = !this.darkMode;
 
