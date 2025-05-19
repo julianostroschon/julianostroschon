@@ -1,9 +1,9 @@
 :root {
   /* Cores principais */
-  --primary-color: #4FC08D; /* Verde Vue.js */
-  --primary-color-rgb: 79, 192, 141; /* Valores RGB para efeitos de transparência */
-  --secondary-color: #34495E;
-  --accent-color: #42B883;
+  --primary-color: #2563eb; /* Azul principal */
+  --primary-color-rgb: 37, 99, 235; /* Valores RGB para efeitos de transparência */
+  --secondary-color: #1e293b; /* Azul escuro */
+  --accent-color: #60a5fa; /* Azul claro */
 
   /* Cores de tecnologias */
   --color-javascript: #F7DF1E;
@@ -227,10 +227,10 @@
 }
 
 html.dark-mode {
-  --primary-color: #42B883;
-  --primary-color-rgb: 66, 184, 131; /* Valores RGB para efeitos de transparência no modo escuro */
-  --secondary-color: #2C3E50;
-  --accent-color: #3FB27F;
+  --primary-color: #60a5fa;
+  --primary-color-rgb: 96, 165, 250; /* Valores RGB para efeitos de transparência no modo escuro */
+  --secondary-color: #0f172a;
+  --accent-color: #2563eb;
 
   --text-primary: #E0E0E0;
   --text-secondary: #B0B0B0;
@@ -963,12 +963,12 @@ a:hover {
   content: '';
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 40px 40px 0;
-  border-color: transparent var(--primary-color) transparent transparent;
+  border-width: 0 0 40px 40px;
+  border-color: transparent transparent transparent var(--primary-color);
   opacity: 0.7;
   z-index: 1;
 }

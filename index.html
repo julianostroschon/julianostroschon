@@ -91,15 +91,16 @@
             <div class="repo-header">
               <h4 class="repo-title">{{ repo.name }}</h4>
               <div class="repo-stats">
-                <span class="repo-stars"><i class="fas fa-star"></i> {{ repo.stars }}</span>
-                <span class="repo-forks"><i class="fas fa-code-branch"></i> {{ repo.forks }}</span>
+                <span class="repo-stars"><i class="fas fa-star"></i> <span v-if="!repo.private">{{ repo.stars }}</span><span v-else>🔒</span></span>
+                <span class="repo-forks"><i class="fas fa-code-branch"></i> <span v-if="!repo.private">{{ repo.forks }}</span><span v-else>🔒</span></span>
               </div>
             </div>
             <div class="repo-description-container">
               <p class="repo-description" :class="{ 'truncated': !repo.expanded }" :id="'desc-' + repo.name">
-                {{ repo.description || 'Sem descrição disponível' }}
+                <span v-if="!repo.private">{{ repo.description || 'Sem descrição disponível' }}</span>
+                <span v-else class="private-description"><i class="fas fa-lock"></i> Repositório Privado</span>
               </p>
-              <div v-if="isDescriptionLong(repo.name)" class="read-more-btn" :class="{ 'expanded': repo.expanded }" @click.stop="toggleDescription(repo, $event)">
+              <div v-if="!repo.private && isDescriptionLong(repo.name)" class="read-more-btn" :class="{ 'expanded': repo.expanded }" @click.stop="toggleDescription(repo, $event)">
                 {{ repo.expanded ? 'Ver menos' : 'Ver mais' }}
                 <i class="fas" :class="repo.expanded ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
               </div>
