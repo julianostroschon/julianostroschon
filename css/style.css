@@ -963,12 +963,12 @@ a:hover {
   content: '';
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 40px 40px 0;
-  border-color: transparent var(--primary-color) transparent transparent;
+  border-width: 0 0 40px 40px;
+  border-color: transparent transparent transparent var(--primary-color);
   opacity: 0.7;
   z-index: 1;
 }
