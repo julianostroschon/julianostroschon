@@ -1,6 +1,20 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "julianostroschon",
+    "technologies": [
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "updated": "2025-08-20",
+    "private": false,
+    "description": "Config files for my GitHub profile.",
+    "url": "https://github.com/julianostroschon/julianostroschon",
+    "stars": 2,
+    "forks": 0
+  },
+  {
     "name": "whatsapp-api-typescript",
     "technologies": [
       "API",
@@ -15,20 +29,6 @@ const repositoriesData = [
     "description": "API para integração com WhatsApp desenvolvida em TypeScript. Permite enviar mensagens e obter IDs de chat através de endpoints RESTful com autenticação JWT.",
     "url": "https://github.com/julianostroschon/whatsapp-api-typescript",
     "stars": 1,
-    "forks": 0
-  },
-  {
-    "name": "julianostroschon",
-    "technologies": [
-      "CSS",
-      "HTML",
-      "JavaScript"
-    ],
-    "updated": "2025-05-19",
-    "private": false,
-    "description": "Config files for my GitHub profile.",
-    "url": "https://github.com/julianostroschon/julianostroschon",
-    "stars": 2,
     "forks": 0
   },
   {
