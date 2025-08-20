@@ -2,11 +2,8 @@ name: Update Repositories Data
 
 on:
   schedule:
-    # Executa diariamente à meia-noite
     - cron: '0 0 * * *'
-  # Permite execução manual a partir da interface do GitHub
   workflow_dispatch:
-  # Executa quando houver push na branch principal
   push:
     branches:
       - main
@@ -15,14 +12,8 @@ on:
 jobs:
   update-repositories:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Fetch repository data
-        env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
-        run: |
-          node .github/scripts/update-repositories.js
-
       - name: Checkout repository
         uses: actions/checkout@v3
 
@@ -34,7 +25,9 @@ jobs:
       - name: Install dependencies
         run: npm install @octokit/rest
 
-      - name: Fetch repository data
+      - name: Fetch and process repository data
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
         run: |
           node .github/scripts/update-repositories.js
 
