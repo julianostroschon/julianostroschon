@@ -1,33 +1,35 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "whatsapp-api-typescript",
+    "technologies": [
+      "API",
+      "Docker",
+      "JWT",
+      "JavaScript",
+      "Node.js",
+      "TypeScript"
+    ],
+    "updated": "2025-08-20",
+    "private": false,
+    "description": "API para integração com WhatsApp desenvolvida em TypeScript. Permite enviar mensagens e obter IDs de chat através de endpoints RESTful com autenticação JWT.",
+    "url": "https://github.com/julianostroschon/whatsapp-api-typescript",
+    "stars": 1,
+    "forks": 0
+  },
+  {
     "name": "julianostroschon",
     "technologies": [
       "CSS",
       "HTML",
       "JavaScript"
     ],
-    "updated": "2025-05-15",
+    "updated": "2025-05-19",
     "private": false,
     "description": "Config files for my GitHub profile.",
     "url": "https://github.com/julianostroschon/julianostroschon",
     "stars": 2,
     "forks": 0
-  },
-  {
-    "name": "issue-voter",
-    "technologies": [
-      "CSS",
-      "JavaScript",
-      "TypeScript",
-      "Vue.js"
-    ],
-    "updated": "2025-05-07",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
   },
   {
     "name": "web-scraping-andrinho",
@@ -72,81 +74,7 @@ const repositoriesData = [
     "description": "Um template moderno para desenvolvimento frontend com Vue 3, Vite, TypeScript e Quasar Framework. Inclui roteamento baseado em arquivos, importação automática de componentes, gerenciamento de estado com Pinia e suporte a i18n.",
     "url": "https://github.com/julianostroschon/front-vite-quasar",
     "stars": 1,
-    "forks": 2
-  },
-  {
-    "name": "volei-torneio",
-    "technologies": [
-      "CSS",
-      "JavaScript",
-      "Shell",
-      "TypeScript",
-      "Vue.js"
-    ],
-    "updated": "2025-04-22",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
-  },
-  {
-    "name": "nuxtjs-graphql",
-    "technologies": [
-      "CSS",
-      "GraphQL",
-      "JavaScript",
-      "Shell",
-      "TypeScript",
-      "Vue.js"
-    ],
-    "updated": "2025-02-17",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
-  },
-  {
-    "name": "nuxt-base",
-    "technologies": [
-      "JavaScript",
-      "TypeScript",
-      "Vue.js"
-    ],
-    "updated": "2025-02-17",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
-  },
-  {
-    "name": "wpp-api",
-    "technologies": [
-      "Docker",
-      "JavaScript",
-      "Procfile"
-    ],
-    "updated": "2024-12-07",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
-  },
-  {
-    "name": "sender",
-    "technologies": [
-      "JavaScript",
-      "TypeScript"
-    ],
-    "updated": "2024-11-12",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
+    "forks": 1
   },
   {
     "name": "front-default",
@@ -187,19 +115,6 @@ const repositoriesData = [
     "forks": 1
   },
   {
-    "name": "d1-scheduler",
-    "technologies": [
-      "JavaScript",
-      "TypeScript"
-    ],
-    "updated": "2024-09-09",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
-  },
-  {
     "name": "back-default",
     "technologies": [
       "API",
@@ -214,62 +129,6 @@ const repositoriesData = [
     "url": "https://github.com/julianostroschon/back-default",
     "stars": 0,
     "forks": 1
-  },
-  {
-    "name": "back-reservation",
-    "technologies": [
-      "Shell",
-      "TypeScript"
-    ],
-    "updated": "2024-07-01",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
-  },
-  {
-    "name": "environment",
-    "technologies": [],
-    "updated": "2024-06-10",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
-  },
-  {
-    "name": "front-reservation",
-    "technologies": [
-      "CSS",
-      "HTML",
-      "JavaScript",
-      "Sass",
-      "Vue.js"
-    ],
-    "updated": "2024-06-05",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
-  },
-  {
-    "name": "whatsapp-api-typescript",
-    "technologies": [
-      "API",
-      "Docker",
-      "JWT",
-      "JavaScript",
-      "Node.js",
-      "TypeScript"
-    ],
-    "updated": "2024-05-24",
-    "private": false,
-    "description": "API para integração com WhatsApp desenvolvida em TypeScript. Permite enviar mensagens e obter IDs de chat através de endpoints RESTful com autenticação JWT.",
-    "url": "https://github.com/julianostroschon/whatsapp-api-typescript",
-    "stars": 1,
-    "forks": 0
   },
   {
     "name": "nestjs-winter",
@@ -354,22 +213,6 @@ const repositoriesData = [
     "forks": 0
   },
   {
-    "name": "back-type-graphql",
-    "technologies": [
-      "Docker",
-      "GraphQL",
-      "JavaScript",
-      "Shell",
-      "TypeScript"
-    ],
-    "updated": "2023-11-13",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
-  },
-  {
     "name": "curso-go",
     "technologies": [
       "Backend",
@@ -395,21 +238,6 @@ const repositoriesData = [
     "url": "https://github.com/julianostroschon/first-app",
     "stars": 1,
     "forks": 0
-  },
-  {
-    "name": "nuxt-project",
-    "technologies": [
-      "CSS",
-      "JavaScript",
-      "TypeScript",
-      "Vue.js"
-    ],
-    "updated": "2023-04-28",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
   },
   {
     "name": "vitesse",
@@ -468,19 +296,5 @@ const repositoriesData = [
     "url": "https://github.com/julianostroschon/application-standard",
     "stars": 0,
     "forks": 1
-  },
-  {
-    "name": "JS",
-    "technologies": [
-      "CSS",
-      "HTML",
-      "JavaScript"
-    ],
-    "updated": "2021-11-24",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
   }
 ];
