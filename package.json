@@ -16,7 +16,7 @@
   "author": "Juliano Stroschön",
   "license": "MIT",
   "dependencies": {
-    "@octokit/rest": "^19.0.7"
+    "@octokit/rest": "^19.0.13"
   },
   "devDependencies": {
     "http-server": "^14.1.1"
