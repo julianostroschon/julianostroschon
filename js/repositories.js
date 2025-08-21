@@ -1,6 +1,37 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "vite-pinia-apollo",
+    "technologies": [
+      "CSS",
+      "HTML",
+      "TypeScript",
+      "Vite",
+      "Vue.js"
+    ],
+    "updated": "2025-08-20",
+    "private": false,
+    "description": "Repositório vite-pinia-apollo",
+    "url": "https://github.com/julianostroschon/vite-pinia-apollo",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "name": "graphql-server",
+    "technologies": [
+      "GraphQL",
+      "JavaScript",
+      "Shell",
+      "TypeScript"
+    ],
+    "updated": "2025-08-20",
+    "private": false,
+    "description": "Repositório graphql-server",
+    "url": "https://github.com/julianostroschon/graphql-server",
+    "stars": 0,
+    "forks": 0
+  },
+  {
     "name": "api-typescript-messages",
     "technologies": [
       "Docker",
