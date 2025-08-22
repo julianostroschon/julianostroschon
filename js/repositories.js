@@ -9,11 +9,25 @@ const repositoriesData = [
       "Vite",
       "Vue.js"
     ],
-    "updated": "2025-08-20",
+    "updated": "2025-08-21",
     "private": false,
     "description": "Repositório vite-pinia-apollo",
     "url": "https://github.com/julianostroschon/vite-pinia-apollo",
     "stars": 0,
+    "forks": 0
+  },
+  {
+    "name": "julianostroschon",
+    "technologies": [
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "updated": "2025-08-21",
+    "private": false,
+    "description": "Config files for my GitHub profile.",
+    "url": "https://github.com/julianostroschon/julianostroschon",
+    "stars": 2,
     "forks": 0
   },
   {
@@ -43,20 +57,6 @@ const repositoriesData = [
     "description": "Repositório api-typescript-messages",
     "url": "https://github.com/julianostroschon/api-typescript-messages",
     "stars": 1,
-    "forks": 0
-  },
-  {
-    "name": "julianostroschon",
-    "technologies": [
-      "CSS",
-      "HTML",
-      "JavaScript"
-    ],
-    "updated": "2025-08-20",
-    "private": false,
-    "description": "Config files for my GitHub profile.",
-    "url": "https://github.com/julianostroschon/julianostroschon",
-    "stars": 2,
     "forks": 0
   },
   {
