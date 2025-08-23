@@ -1,6 +1,35 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "graphql-server",
+    "technologies": [
+      "GraphQL",
+      "JavaScript",
+      "Shell",
+      "TypeScript"
+    ],
+    "updated": "2025-08-22",
+    "private": false,
+    "description": "Repositório graphql-server",
+    "url": "https://github.com/julianostroschon/graphql-server",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "name": "julianostroschon",
+    "technologies": [
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "updated": "2025-08-22",
+    "private": false,
+    "description": "Config files for my GitHub profile.",
+    "url": "https://github.com/julianostroschon/julianostroschon",
+    "stars": 2,
+    "forks": 0
+  },
+  {
     "name": "vite-pinia-apollo",
     "technologies": [
       "CSS",
@@ -13,35 +42,6 @@ const repositoriesData = [
     "private": false,
     "description": "Repositório vite-pinia-apollo",
     "url": "https://github.com/julianostroschon/vite-pinia-apollo",
-    "stars": 0,
-    "forks": 0
-  },
-  {
-    "name": "julianostroschon",
-    "technologies": [
-      "CSS",
-      "HTML",
-      "JavaScript"
-    ],
-    "updated": "2025-08-21",
-    "private": false,
-    "description": "Config files for my GitHub profile.",
-    "url": "https://github.com/julianostroschon/julianostroschon",
-    "stars": 2,
-    "forks": 0
-  },
-  {
-    "name": "graphql-server",
-    "technologies": [
-      "GraphQL",
-      "JavaScript",
-      "Shell",
-      "TypeScript"
-    ],
-    "updated": "2025-08-20",
-    "private": false,
-    "description": "Repositório graphql-server",
-    "url": "https://github.com/julianostroschon/graphql-server",
     "stars": 0,
     "forks": 0
   },
