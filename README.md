@@ -19,6 +19,22 @@ Sou um **Tech Lead** e **Desenvolvedor Full-Stack** baseado em Santo Ângelo, RS
 
 ---
 
+### 🚀 Portfólio de Projetos
+
+Meu portfólio de projetos está disponível em [https://julianostroschon.github.io/julianostroschon](https://julianostroschon.github.io/julianostroschon). Ele exibe meus repositórios públicos do GitHub em uma interface amigável e responsiva.
+
+#### Características
+
+- 🔄 **Atualização Automática**: Utiliza GitHub Actions para atualizar automaticamente os dados dos repositórios
+- 🌙 **Modo Escuro/Claro**: Suporte a tema escuro e claro
+- 🔍 **Filtragem e Busca**: Filtre repositórios por tecnologia ou busque por nome/descrição
+- 📱 **Design Responsivo**: Funciona em dispositivos móveis, tablets e desktops
+- ⚡ **Reatividade com Vue.js**: Interface reativa e dinâmica
+- 📊 **Contador de Repositórios**: Mostra quantos repositórios estão sendo exibidos
+- 📝 **Descrições Expandíveis**: Cards com tamanho padronizado e botão "Ver mais" para descrições longas
+
+---
+
 ### 🔧 Tecnologias e Ferramentas
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
@@ -37,18 +53,3 @@ Sou um **Tech Lead** e **Desenvolvedor Full-Stack** baseado em Santo Ângelo, RS
 
 * 📫 Como me encontrar: [julianostroschon@gmail.com](mailto:julianostroschon@gmail.com)
 * 🔗 GitHub: [https://github.com/julianostroschon](https://github.com/julianostroschon)
----
-
-### 🚀 Portfólio de Projetos
-
-Meu portfólio de projetos está disponível em [https://julianostroschon.github.io/julianostroschon](https://julianostroschon.github.io/julianostroschon). Ele exibe meus repositórios públicos do GitHub em uma interface amigável e responsiva.
-
-#### Características
-
-- 🔄 **Atualização Automática**: Utiliza GitHub Actions para atualizar automaticamente os dados dos repositórios
-- 🌙 **Modo Escuro/Claro**: Suporte a tema escuro e claro
-- 🔍 **Filtragem e Busca**: Filtre repositórios por tecnologia ou busque por nome/descrição
-- 📱 **Design Responsivo**: Funciona em dispositivos móveis, tablets e desktops
-- ⚡ **Reatividade com Vue.js**: Interface reativa e dinâmica
-- 📊 **Contador de Repositórios**: Mostra quantos repositórios estão sendo exibidos
-- 📝 **Descrições Expandíveis**: Cards com tamanho padronizado e botão "Ver mais" para descrições longas
