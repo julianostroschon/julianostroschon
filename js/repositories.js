@@ -15,6 +15,38 @@ const repositoriesData = [
     "forks": 0
   },
   {
+    "name": "fortuna",
+    "technologies": [
+      "CSS",
+      "JavaScript",
+      "Shell",
+      "TypeScript",
+      "Vue.js"
+    ],
+    "updated": "2025-09-14",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
+    "name": "volei-torneio",
+    "technologies": [
+      "CSS",
+      "JavaScript",
+      "Shell",
+      "TypeScript",
+      "Vue.js"
+    ],
+    "updated": "2025-09-14",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
     "name": "api-typescript-messages",
     "technologies": [
       "API",
@@ -30,6 +62,29 @@ const repositoriesData = [
     "url": "https://github.com/julianostroschon/api-typescript-messages",
     "stars": 1,
     "forks": 0
+  },
+  {
+    "name": "sender",
+    "technologies": [
+      "JavaScript",
+      "TypeScript"
+    ],
+    "updated": "2025-09-12",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
+    "name": "devops",
+    "technologies": [],
+    "updated": "2025-09-06",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
   },
   {
     "name": "graphql-server",
@@ -61,6 +116,51 @@ const repositoriesData = [
     "url": "https://github.com/julianostroschon/vite-pinia-apollo",
     "stars": 0,
     "forks": 0
+  },
+  {
+    "name": "entrevistas",
+    "technologies": [],
+    "updated": "2025-06-23",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
+    "name": "one-on-one-frontend",
+    "technologies": [],
+    "updated": "2025-06-21",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
+    "name": "one-on-one",
+    "technologies": [],
+    "updated": "2025-06-21",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
+    "name": "issue-voter",
+    "technologies": [
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Vue.js"
+    ],
+    "updated": "2025-05-07",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
   },
   {
     "name": "web-scraping-andrinho",
@@ -108,6 +208,51 @@ const repositoriesData = [
     "forks": 1
   },
   {
+    "name": "nuxtjs-graphql",
+    "technologies": [
+      "CSS",
+      "GraphQL",
+      "JavaScript",
+      "Shell",
+      "TypeScript",
+      "Vue.js"
+    ],
+    "updated": "2025-02-17",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
+    "name": "nuxt-base",
+    "technologies": [
+      "JavaScript",
+      "TypeScript",
+      "Vue.js"
+    ],
+    "updated": "2025-02-17",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
+    "name": "wpp-api",
+    "technologies": [
+      "Docker",
+      "JavaScript",
+      "Procfile"
+    ],
+    "updated": "2024-12-07",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
     "name": "front-default",
     "technologies": [
       "CSS",
@@ -146,6 +291,19 @@ const repositoriesData = [
     "forks": 1
   },
   {
+    "name": "d1-scheduler",
+    "technologies": [
+      "JavaScript",
+      "TypeScript"
+    ],
+    "updated": "2024-09-09",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
     "name": "back-default",
     "technologies": [
       "API",
@@ -160,6 +318,45 @@ const repositoriesData = [
     "url": "https://github.com/julianostroschon/back-default",
     "stars": 0,
     "forks": 1
+  },
+  {
+    "name": "back-reservation",
+    "technologies": [
+      "Shell",
+      "TypeScript"
+    ],
+    "updated": "2024-07-01",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
+    "name": "environment",
+    "technologies": [],
+    "updated": "2024-06-10",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
+    "name": "front-reservation",
+    "technologies": [
+      "CSS",
+      "HTML",
+      "JavaScript",
+      "Sass",
+      "Vue.js"
+    ],
+    "updated": "2024-06-05",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
   },
   {
     "name": "nestjs-winter",
@@ -244,6 +441,22 @@ const repositoriesData = [
     "forks": 0
   },
   {
+    "name": "back-type-graphql",
+    "technologies": [
+      "Docker",
+      "GraphQL",
+      "JavaScript",
+      "Shell",
+      "TypeScript"
+    ],
+    "updated": "2023-11-13",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
     "name": "curso-go",
     "technologies": [
       "Backend",
@@ -269,6 +482,21 @@ const repositoriesData = [
     "url": "https://github.com/julianostroschon/first-app",
     "stars": 1,
     "forks": 0
+  },
+  {
+    "name": "nuxt-project",
+    "technologies": [
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Vue.js"
+    ],
+    "updated": "2023-04-28",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
   },
   {
     "name": "vitesse",
@@ -327,5 +555,19 @@ const repositoriesData = [
     "url": "https://github.com/julianostroschon/application-standard",
     "stars": 0,
     "forks": 1
+  },
+  {
+    "name": "JS",
+    "technologies": [
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "updated": "2021-11-24",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
   }
 ];
