@@ -1,6 +1,19 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "sender",
+    "technologies": [
+      "JavaScript",
+      "TypeScript"
+    ],
+    "updated": "2025-09-15",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
     "name": "julianostroschon",
     "technologies": [
       "CSS",
@@ -62,19 +75,6 @@ const repositoriesData = [
     "url": "https://github.com/julianostroschon/api-typescript-messages",
     "stars": 1,
     "forks": 0
-  },
-  {
-    "name": "sender",
-    "technologies": [
-      "JavaScript",
-      "TypeScript"
-    ],
-    "updated": "2025-09-12",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
   },
   {
     "name": "devops",
