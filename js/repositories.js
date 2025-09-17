@@ -1,6 +1,39 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "api-typescript-messages",
+    "technologies": [
+      "API",
+      "CSS",
+      "Docker",
+      "Fastify",
+      "HTML",
+      "JavaScript",
+      "Shell",
+      "TypeScript"
+    ],
+    "updated": "2025-09-16",
+    "private": false,
+    "description": "Repositório api-typescript-messages",
+    "url": "https://github.com/julianostroschon/api-typescript-messages",
+    "stars": 1,
+    "forks": 0
+  },
+  {
+    "name": "julianostroschon",
+    "technologies": [
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "updated": "2025-09-16",
+    "private": false,
+    "description": "Config files for my GitHub profile.",
+    "url": "https://github.com/julianostroschon/julianostroschon",
+    "stars": 2,
+    "forks": 0
+  },
+  {
     "name": "sender",
     "technologies": [
       "JavaScript",
@@ -12,20 +45,6 @@ const repositoriesData = [
     "stars": "🔒",
     "forks": "🔒",
     "url": null
-  },
-  {
-    "name": "julianostroschon",
-    "technologies": [
-      "CSS",
-      "HTML",
-      "JavaScript"
-    ],
-    "updated": "2025-09-15",
-    "private": false,
-    "description": "Config files for my GitHub profile.",
-    "url": "https://github.com/julianostroschon/julianostroschon",
-    "stars": 2,
-    "forks": 0
   },
   {
     "name": "fortuna",
@@ -58,23 +77,6 @@ const repositoriesData = [
     "stars": "🔒",
     "forks": "🔒",
     "url": null
-  },
-  {
-    "name": "api-typescript-messages",
-    "technologies": [
-      "API",
-      "Docker",
-      "Fastify",
-      "JavaScript",
-      "Shell",
-      "TypeScript"
-    ],
-    "updated": "2025-09-12",
-    "private": false,
-    "description": "Repositório api-typescript-messages",
-    "url": "https://github.com/julianostroschon/api-typescript-messages",
-    "stars": 1,
-    "forks": 0
   },
   {
     "name": "devops",
