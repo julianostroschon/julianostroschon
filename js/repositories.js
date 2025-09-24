@@ -1,13 +1,27 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "devops",
+    "technologies": [
+      "Docker",
+      "HCL",
+      "Shell"
+    ],
+    "updated": "2025-09-23",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
     "name": "julianostroschon",
     "technologies": [
       "CSS",
       "HTML",
       "JavaScript"
     ],
-    "updated": "2025-09-22",
+    "updated": "2025-09-23",
     "private": false,
     "description": "Config files for my GitHub profile.",
     "url": "https://github.com/julianostroschon/julianostroschon",
@@ -72,16 +86,6 @@ const repositoriesData = [
       "Vue.js"
     ],
     "updated": "2025-09-14",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
-  },
-  {
-    "name": "devops",
-    "technologies": [],
-    "updated": "2025-09-06",
     "private": true,
     "description": "🔒 Repositório Privado",
     "stars": "🔒",
