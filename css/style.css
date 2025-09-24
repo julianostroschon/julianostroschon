@@ -173,7 +173,13 @@
   --color-quasar: #1976D2;
   --color-vite: #646CFF;
   --color-api: #0096D6;
-
+  --color-hcl: #0078D4;
+  --color-packer: #0078D4; /* Cores da HashiCorp */
+  --color-terraform: #623AE2;
+  --color-ansible: #EE3E3E;
+  --color-nestjs: #E0234E;
+  --color-yaml: #0081CB;
+  --color-json: #0078D4;
   /* Cores de ícones */
   --color-star: #FFD700; /* Dourado */
   --color-fork: #6E5494; /* Roxo do GitHub */

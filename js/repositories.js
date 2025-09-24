@@ -5,9 +5,10 @@ const repositoriesData = [
     "technologies": [
       "Docker",
       "HCL",
+      "JavaScript",
       "Shell"
     ],
-    "updated": "2025-09-23",
+    "updated": "2025-09-24",
     "private": true,
     "description": "🔒 Repositório Privado",
     "stars": "🔒",
@@ -21,7 +22,7 @@ const repositoriesData = [
       "HTML",
       "JavaScript"
     ],
-    "updated": "2025-09-23",
+    "updated": "2025-09-24",
     "private": false,
     "description": "Config files for my GitHub profile.",
     "url": "https://github.com/julianostroschon/julianostroschon",
