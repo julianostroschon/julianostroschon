@@ -1,32 +1,33 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
-    "name": "devops",
-    "technologies": [
-      "Docker",
-      "HCL",
-      "Shell"
-    ],
-    "updated": "2025-09-23",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
-  },
-  {
     "name": "julianostroschon",
     "technologies": [
       "CSS",
       "HTML",
       "JavaScript"
     ],
-    "updated": "2025-09-23",
+    "updated": "2025-09-24",
     "private": false,
     "description": "Config files for my GitHub profile.",
     "url": "https://github.com/julianostroschon/julianostroschon",
     "stars": 2,
     "forks": 0
+  },
+  {
+    "name": "devops",
+    "technologies": [
+      "Docker",
+      "HCL",
+      "JavaScript",
+      "Shell"
+    ],
+    "updated": "2025-09-24",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
   },
   {
     "name": "api-typescript-messages",
