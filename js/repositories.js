@@ -1,6 +1,19 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "back-bun",
+    "technologies": [
+      "Docker",
+      "TypeScript"
+    ],
+    "updated": "2025-09-26",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
     "name": "julianostroschon",
     "technologies": [
       "CSS",
