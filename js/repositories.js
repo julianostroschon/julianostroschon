@@ -1,13 +1,32 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "api-typescript-messages",
+    "technologies": [
+      "API",
+      "CSS",
+      "Docker",
+      "Fastify",
+      "HTML",
+      "JavaScript",
+      "Shell",
+      "TypeScript"
+    ],
+    "updated": "2025-10-05",
+    "private": true,
+    "description": "Repositório api-typescript-messages",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
     "name": "julianostroschon",
     "technologies": [
       "CSS",
       "HTML",
       "JavaScript"
     ],
-    "updated": "2025-10-04",
+    "updated": "2025-10-05",
     "private": false,
     "description": "Config files for my GitHub profile.",
     "url": "https://github.com/julianostroschon/julianostroschon",
@@ -41,25 +60,6 @@ const repositoriesData = [
     "stars": "🔒",
     "forks": "🔒",
     "url": null
-  },
-  {
-    "name": "api-typescript-messages",
-    "technologies": [
-      "API",
-      "CSS",
-      "Docker",
-      "Fastify",
-      "HTML",
-      "JavaScript",
-      "Shell",
-      "TypeScript"
-    ],
-    "updated": "2025-09-16",
-    "private": false,
-    "description": "Repositório api-typescript-messages",
-    "url": "https://github.com/julianostroschon/api-typescript-messages",
-    "stars": 1,
-    "forks": 0
   },
   {
     "name": "sender",
