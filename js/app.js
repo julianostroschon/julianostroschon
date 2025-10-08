@@ -1,5 +1,6 @@
 // Aplicação Vue.js
-const techColorVars = {
+// Use shared vars if exposed (by js/technologies.js), otherwise fallback to local map of css-var names
+const techColorVars = (window && window.TECH_COLOR_VARS) ? window.TECH_COLOR_VARS : {
   'JavaScript': '--color-javascript',
   'TypeScript': '--color-typescript',
   'Vue.js': '--color-vuejs',
@@ -37,7 +38,8 @@ const app = Vue.createApp({
       searchQuery: '',
       sortOption: 'updated',
       currentTechFilter: '',
-      technologies: [
+      // Prefer the shared TECHNOLOGIES if available; otherwise use the local list
+      technologies: (window && window.TECHNOLOGIES) ? window.TECHNOLOGIES : [
         { name: 'Vue.js', icon: 'fab fa-vuejs' },
         { name: 'TypeScript', icon: 'fab fa-js-square' },
         { name: 'JavaScript', icon: 'fab fa-js' },

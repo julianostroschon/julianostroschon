@@ -27,6 +27,10 @@
             <a href="https://www.linkedin.com/in/juliano-stroschon-a199211ab/" target="_blank" class="social-link">
               <i class="fab fa-linkedin"></i>
             </a>
+            <a href="cv.html" target="_blank" class="social-link">
+              <i class="fas fa-file"></i>
+            </a>
+
           </div>
         </div>
       </div>
@@ -199,43 +203,29 @@
     </footer>
   </div>
 
+  <script src="js/technologies.js"></script>
   <script src="js/repositories.js"></script>
   <script src="js/app.js"></script>
-<script>
-  // Função para aplicar cor de fundo baseada na tecnologia, disponível para Vue
-  const techColorVars = {
-    'JavaScript': '--color-javascript',
-    'TypeScript': '--color-typescript',
-    'Vue.js': '--color-vuejs',
-    'React': '--color-react',
-    'Angular': '--color-angular',
-    'Node.js': '--color-nodejs',
-    'Python': '--color-python',
-    'Go': '--color-go',
-    'HTML': '--color-html',
-    'CSS': '--color-css',
-    'Sass': '--color-sass',
-    'Docker': '--color-docker',
-    'GraphQL': '--color-graphql',
-    'Quasar': '--color-quasar',
-    'Vite': '--color-vite',
-    'API': '--color-api',
-    // Adicione mais se quiser
-  };
-  
-  // Adiciona ao app Vue
-  const originalCreateApp = window.Vue.createApp;
-  window.Vue.createApp = function(options) {
-    options.methods = options.methods || {};
-    options.methods.techColorStyle = function(techName) {
-      const cssVar = techColorVars[techName];
-      if (cssVar) {
-        return { backgroundColor: `var(${cssVar})`, color: techName === 'JavaScript' ? '#000' : '#fff' };
+  <script>
+    // Compatibility shim: if the shared TECH_COLOR_VARS is present, use it in the Vue app
+    (function(){
+      const originalCreateApp = window.Vue && window.Vue.createApp
+      if (!originalCreateApp) return
+
+      window.Vue.createApp = function(options) {
+        options.methods = options.methods || {}
+        options.methods.techColorStyle = function(techName) {
+          // If the page defines a css var mapping, prefer that; otherwise try shared colors
+          if (window.TECH_COLOR_VARS && window.TECH_COLOR_VARS[techName]) {
+            return { backgroundColor: window.TECH_COLOR_VARS[techName], color: window.getContrastColor ? window.getContrastColor(window.TECH_COLOR_VARS[techName]) : '#fff' }
+          }
+          // Fallback to previous behavior (no color)
+          return {}
+        }
+
+        return originalCreateApp(options)
       }
-      return {};
-    };
-    return originalCreateApp(options);
-  };
-</script>
+    })()
+  </script>
 </body>
 </html>
