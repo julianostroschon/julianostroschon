@@ -1,6 +1,54 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "api-typescript-messages",
+    "technologies": [
+      "API",
+      "CSS",
+      "Docker",
+      "Fastify",
+      "HTML",
+      "JavaScript",
+      "Shell",
+      "TypeScript"
+    ],
+    "updated": "2025-10-08",
+    "private": true,
+    "description": "Repositório api-typescript-messages",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
+    "name": "devops",
+    "technologies": [
+      "Docker",
+      "HCL",
+      "HTML",
+      "JavaScript",
+      "Jinja",
+      "Shell"
+    ],
+    "updated": "2025-10-08",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
+    "name": "backup",
+    "technologies": [
+      "Shell"
+    ],
+    "updated": "2025-10-08",
+    "private": false,
+    "description": "Repositório backup",
+    "url": "https://github.com/julianostroschon/backup",
+    "stars": 0,
+    "forks": 0
+  },
+  {
     "name": "julianostroschon",
     "technologies": [
       "CSS",
@@ -15,46 +63,12 @@ const repositoriesData = [
     "forks": 0
   },
   {
-    "name": "api-typescript-messages",
-    "technologies": [
-      "API",
-      "CSS",
-      "Docker",
-      "Fastify",
-      "HTML",
-      "JavaScript",
-      "Shell",
-      "TypeScript"
-    ],
-    "updated": "2025-10-06",
-    "private": true,
-    "description": "Repositório api-typescript-messages",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
-  },
-  {
     "name": "back-bun",
     "technologies": [
       "Docker",
       "TypeScript"
     ],
     "updated": "2025-09-26",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
-  },
-  {
-    "name": "devops",
-    "technologies": [
-      "Docker",
-      "HCL",
-      "JavaScript",
-      "Shell"
-    ],
-    "updated": "2025-09-24",
     "private": true,
     "description": "🔒 Repositório Privado",
     "stars": "🔒",
@@ -191,18 +205,6 @@ const repositoriesData = [
     "private": false,
     "description": "Repositório web-scraping-andrinho",
     "url": "https://github.com/julianostroschon/web-scraping-andrinho",
-    "stars": 0,
-    "forks": 0
-  },
-  {
-    "name": "backup",
-    "technologies": [
-      "Shell"
-    ],
-    "updated": "2025-04-28",
-    "private": false,
-    "description": "Repositório backup",
-    "url": "https://github.com/julianostroschon/backup",
     "stars": 0,
     "forks": 0
   },
