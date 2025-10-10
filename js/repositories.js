@@ -1,6 +1,23 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "devops",
+    "technologies": [
+      "Docker",
+      "HCL",
+      "HTML",
+      "JavaScript",
+      "Jinja",
+      "Shell"
+    ],
+    "updated": "2025-10-09",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
     "name": "api-typescript-messages",
     "technologies": [
       "API",
@@ -12,7 +29,7 @@ const repositoriesData = [
       "Shell",
       "TypeScript"
     ],
-    "updated": "2025-10-08",
+    "updated": "2025-10-09",
     "private": true,
     "description": "Repositório api-typescript-messages",
     "stars": "🔒",
@@ -20,21 +37,18 @@ const repositoriesData = [
     "url": null
   },
   {
-    "name": "devops",
+    "name": "julianostroschon",
     "technologies": [
-      "Docker",
-      "HCL",
+      "CSS",
       "HTML",
-      "JavaScript",
-      "Jinja",
-      "Shell"
+      "JavaScript"
     ],
-    "updated": "2025-10-08",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
+    "updated": "2025-10-09",
+    "private": false,
+    "description": "Config files for my GitHub profile.",
+    "url": "https://github.com/julianostroschon/julianostroschon",
+    "stars": 2,
+    "forks": 0
   },
   {
     "name": "backup",
@@ -46,20 +60,6 @@ const repositoriesData = [
     "description": "Repositório backup",
     "url": "https://github.com/julianostroschon/backup",
     "stars": 0,
-    "forks": 0
-  },
-  {
-    "name": "julianostroschon",
-    "technologies": [
-      "CSS",
-      "HTML",
-      "JavaScript"
-    ],
-    "updated": "2025-10-08",
-    "private": false,
-    "description": "Config files for my GitHub profile.",
-    "url": "https://github.com/julianostroschon/julianostroschon",
-    "stars": 2,
     "forks": 0
   },
   {
