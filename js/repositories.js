@@ -1,20 +1,6 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
-    "name": "julianostroschon",
-    "technologies": [
-      "CSS",
-      "HTML",
-      "JavaScript"
-    ],
-    "updated": "2025-10-12",
-    "private": false,
-    "description": "Config files for my GitHub profile.",
-    "url": "https://github.com/julianostroschon/julianostroschon",
-    "stars": 2,
-    "forks": 0
-  },
-  {
     "name": "devops",
     "technologies": [
       "Docker",
@@ -24,12 +10,42 @@ const repositoriesData = [
       "Jinja",
       "Shell"
     ],
-    "updated": "2025-10-10",
+    "updated": "2025-10-13",
     "private": true,
     "description": "🔒 Repositório Privado",
     "stars": "🔒",
     "forks": "🔒",
     "url": null
+  },
+  {
+    "name": "volei-torneio",
+    "technologies": [
+      "CSS",
+      "JavaScript",
+      "Shell",
+      "TypeScript",
+      "Vue.js"
+    ],
+    "updated": "2025-10-13",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
+    "name": "julianostroschon",
+    "technologies": [
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "updated": "2025-10-13",
+    "private": false,
+    "description": "Config files for my GitHub profile.",
+    "url": "https://github.com/julianostroschon/julianostroschon",
+    "stars": 2,
+    "forks": 0
   },
   {
     "name": "api-typescript-messages",
@@ -90,22 +106,6 @@ const repositoriesData = [
   },
   {
     "name": "fortuna",
-    "technologies": [
-      "CSS",
-      "JavaScript",
-      "Shell",
-      "TypeScript",
-      "Vue.js"
-    ],
-    "updated": "2025-09-14",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
-  },
-  {
-    "name": "volei-torneio",
     "technologies": [
       "CSS",
       "JavaScript",
