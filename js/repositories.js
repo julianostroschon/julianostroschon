@@ -1,13 +1,28 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "issue-voter",
+    "technologies": [
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Vue.js"
+    ],
+    "updated": "2025-11-12",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
     "name": "julianostroschon",
     "technologies": [
       "CSS",
       "HTML",
       "JavaScript"
     ],
-    "updated": "2025-11-11",
+    "updated": "2025-11-12",
     "private": false,
     "description": "Config files for my GitHub profile.",
     "url": "https://github.com/julianostroschon/julianostroschon",
@@ -175,21 +190,6 @@ const repositoriesData = [
     "name": "one-on-one",
     "technologies": [],
     "updated": "2025-06-21",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
-  },
-  {
-    "name": "issue-voter",
-    "technologies": [
-      "CSS",
-      "JavaScript",
-      "TypeScript",
-      "Vue.js"
-    ],
-    "updated": "2025-05-07",
     "private": true,
     "description": "🔒 Repositório Privado",
     "stars": "🔒",
