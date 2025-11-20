@@ -1,6 +1,36 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "volei-torneio",
+    "technologies": [
+      "CSS",
+      "JavaScript",
+      "Shell",
+      "TypeScript",
+      "Vue.js"
+    ],
+    "updated": "2025-11-19",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
+    "name": "julianostroschon",
+    "technologies": [
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "updated": "2025-11-19",
+    "private": false,
+    "description": "Config files for my GitHub profile.",
+    "url": "https://github.com/julianostroschon/julianostroschon",
+    "stars": 2,
+    "forks": 0
+  },
+  {
     "name": "api-typescript-messages",
     "technologies": [
       "API",
@@ -18,20 +48,6 @@ const repositoriesData = [
     "stars": "🔒",
     "forks": "🔒",
     "url": null
-  },
-  {
-    "name": "julianostroschon",
-    "technologies": [
-      "CSS",
-      "HTML",
-      "JavaScript"
-    ],
-    "updated": "2025-11-18",
-    "private": false,
-    "description": "Config files for my GitHub profile.",
-    "url": "https://github.com/julianostroschon/julianostroschon",
-    "stars": 2,
-    "forks": 0
   },
   {
     "name": "issue-voter",
@@ -57,22 +73,6 @@ const repositoriesData = [
       "JavaScript",
       "Jinja",
       "Shell"
-    ],
-    "updated": "2025-10-13",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
-  },
-  {
-    "name": "volei-torneio",
-    "technologies": [
-      "CSS",
-      "JavaScript",
-      "Shell",
-      "TypeScript",
-      "Vue.js"
     ],
     "updated": "2025-10-13",
     "private": true,
