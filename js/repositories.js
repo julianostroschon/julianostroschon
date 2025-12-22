@@ -1,6 +1,20 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "julianostroschon",
+    "technologies": [
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "updated": "2025-12-21",
+    "private": false,
+    "description": "Config files for my GitHub profile.",
+    "url": "https://github.com/julianostroschon/julianostroschon",
+    "stars": 2,
+    "forks": 0
+  },
+  {
     "name": "devops",
     "technologies": [
       "Docker",
@@ -16,20 +30,6 @@ const repositoriesData = [
     "stars": "🔒",
     "forks": "🔒",
     "url": null
-  },
-  {
-    "name": "julianostroschon",
-    "technologies": [
-      "CSS",
-      "HTML",
-      "JavaScript"
-    ],
-    "updated": "2025-12-20",
-    "private": false,
-    "description": "Config files for my GitHub profile.",
-    "url": "https://github.com/julianostroschon/julianostroschon",
-    "stars": 2,
-    "forks": 0
   },
   {
     "name": "volei-torneio",
