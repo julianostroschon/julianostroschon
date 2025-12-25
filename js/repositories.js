@@ -1,20 +1,6 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
-    "name": "julianostroschon",
-    "technologies": [
-      "CSS",
-      "HTML",
-      "JavaScript"
-    ],
-    "updated": "2025-12-23",
-    "private": false,
-    "description": "Config files for my GitHub profile.",
-    "url": "https://github.com/julianostroschon/julianostroschon",
-    "stars": 2,
-    "forks": 0
-  },
-  {
     "name": "devops",
     "technologies": [
       "Docker",
@@ -24,12 +10,38 @@ const repositoriesData = [
       "Jinja",
       "Shell"
     ],
-    "updated": "2025-12-22",
+    "updated": "2025-12-24",
     "private": true,
     "description": "🔒 Repositório Privado",
     "stars": "🔒",
     "forks": "🔒",
     "url": null
+  },
+  {
+    "name": "backup",
+    "technologies": [
+      "Shell"
+    ],
+    "updated": "2025-12-24",
+    "private": false,
+    "description": "Repositório backup",
+    "url": "https://github.com/julianostroschon/backup",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "name": "julianostroschon",
+    "technologies": [
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "updated": "2025-12-24",
+    "private": false,
+    "description": "Config files for my GitHub profile.",
+    "url": "https://github.com/julianostroschon/julianostroschon",
+    "stars": 2,
+    "forks": 0
   },
   {
     "name": "volei-torneio",
@@ -80,18 +92,6 @@ const repositoriesData = [
     "stars": "🔒",
     "forks": "🔒",
     "url": null
-  },
-  {
-    "name": "backup",
-    "technologies": [
-      "Shell"
-    ],
-    "updated": "2025-10-08",
-    "private": false,
-    "description": "Repositório backup",
-    "url": "https://github.com/julianostroschon/backup",
-    "stars": 0,
-    "forks": 0
   },
   {
     "name": "back-bun",
