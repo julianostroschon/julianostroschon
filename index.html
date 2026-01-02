@@ -15,10 +15,11 @@
         <div class="header-content">
           <div class="logo">
             <h1>Juliano Stroschön</h1>
-            <p class="tagline">Tech Lead | Full Stack Developer</p>
+            <p class="tagline">Senior Software Engineer • Platform • DevOps • Tech Lead</p>
           </div>
           <div class="header-actions">
-            <button @click="toggleDarkMode" class="theme-toggle" :aria-label="darkMode ? 'Ativar modo claro' : 'Ativar modo escuro'">
+            <button @click="toggleDarkMode" class="theme-toggle"
+              :aria-label="darkMode ? 'Ativar modo claro' : 'Ativar modo escuro'">
               <i :class="darkMode ? 'fas fa-sun' : 'fas fa-moon'"></i>
             </button>
             <a href="https://github.com/julianostroschon" target="_blank" class="social-link">
@@ -30,7 +31,6 @@
             <a href="cv.html" target="_blank" class="social-link">
               <i class="fas fa-file"></i>
             </a>
-
           </div>
         </div>
       </div>
@@ -39,8 +39,14 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <h2>Meus Projetos Open Source</h2>
-          <p>Bem-vindo ao meu portfólio de projetos. Aqui você encontrará uma coleção dos meus trabalhos em desenvolvimento web, com foco em Vue.js, TypeScript, Node.js e outras tecnologias modernas.</p>
+          <h2>Projetos e Experimentos de Engenharia</h2>
+          <p>
+            Este portfólio reúne projetos open source e experimentos técnicos voltados a
+            <strong>arquitetura de software</strong>, <strong>sistemas distribuídos</strong>,
+            <strong>DevOps</strong> e <strong>plataformas internas</strong>.
+            Os repositórios refletem soluções reais utilizando Vue.js, TypeScript, Node.js,
+            mensageria, automação e infraestrutura como código.
+          </p>
           <div class="hero-actions">
             <a href="#repositories" class="btn btn-primary">Ver Projetos</a>
             <a href="mailto:julianostroschon@gmail.com" class="btn btn-secondary">Contato</a>
@@ -51,10 +57,12 @@
 
     <section class="tech-stack">
       <div class="container">
-        <h3>Tecnologias</h3>
+        <h3>Stack & Domínios Técnicos</h3>
         <div class="tech-grid">
-          <div class="tech-item" v-for="tech in technologies" :key="tech.name" @click="filterByTech(tech.name)"
-            >
+          <div class="tech-item"
+               v-for="tech in technologies"
+               :key="tech.name"
+               @click="filterByTech(tech.name)">
             <i :class="tech.icon" :style="techColorStyle(tech.name)"></i>
             <span>{{ tech.name }}</span>
           </div>
@@ -71,7 +79,9 @@
               <span class="repo-count">{{ filteredRepositories.length }}</span>
               <span class="repo-total">/ {{ repositories.length }}</span>
               <span class="repo-label">repositórios</span>
-              <span v-if="hasPrivateRepos" class="private-indicator" :title="`Inclui ${privateReposCount} repositório(s) privado(s)`">
+              <span v-if="hasPrivateRepos"
+                    class="private-indicator"
+                    :title="`Inclui ${privateReposCount} repositório(s) privado(s)`">
                 <i class="fas fa-lock"></i>
               </span>
             </div>
@@ -92,31 +102,71 @@
         </div>
 
         <div class="repo-grid">
-          <div class="repo-card" v-for="repo in filteredRepositories" :key="repo.name" :class="{ 'private-repo': repo.private }" @click="repo.private && highlightPrivateRepo($event)">
+          <div class="repo-card"
+               v-for="repo in filteredRepositories"
+               :key="repo.name"
+               :class="{ 'private-repo': repo.private }"
+               @click="repo.private && highlightPrivateRepo($event)">
+
             <div class="repo-header">
               <h4 class="repo-title">{{ repo.name }}</h4>
               <div class="repo-stats">
-                <span class="repo-stars"><i class="fas fa-star"></i> <span v-if="!repo.private">{{ repo.stars }}</span><span v-else>🔒</span></span>
-                <span class="repo-forks"><i class="fas fa-code-branch"></i> <span v-if="!repo.private">{{ repo.forks }}</span><span v-else>🔒</span></span>
+                <span class="repo-stars">
+                  <i class="fas fa-star"></i>
+                  <span v-if="!repo.private">{{ repo.stars }}</span>
+                  <span v-else>🔒</span>
+                </span>
+                <span class="repo-forks">
+                  <i class="fas fa-code-branch"></i>
+                  <span v-if="!repo.private">{{ repo.forks }}</span>
+                  <span v-else>🔒</span>
+                </span>
               </div>
             </div>
+
             <div class="repo-description-container">
-              <p class="repo-description" :class="{ 'truncated': !repo.expanded }" :id="'desc-' + repo.name">
-                <span v-if="!repo.private">{{ repo.description || 'Sem descrição disponível' }}</span>
-                <span v-else class="private-description"><i class="fas fa-lock"></i> Repositório Privado</span>
+              <p class="repo-description"
+                 :class="{ 'truncated': !repo.expanded }"
+                 :id="'desc-' + repo.name">
+                <span v-if="!repo.private">
+                  {{ repo.description || 'Sem descrição disponível' }}
+                </span>
+                <span v-else class="private-description">
+                  <i class="fas fa-lock"></i> Repositório Privado
+                </span>
               </p>
-              <div v-if="!repo.private && isDescriptionLong(repo.name)" class="read-more-btn" :class="{ 'expanded': repo.expanded }" @click.stop="toggleDescription(repo, $event)">
+              <div v-if="!repo.private && isDescriptionLong(repo.name)"
+                   class="read-more-btn"
+                   :class="{ 'expanded': repo.expanded }"
+                   @click.stop="toggleDescription(repo, $event)">
                 {{ repo.expanded ? 'Ver menos' : 'Ver mais' }}
-                <i class="fas" :class="repo.expanded ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+                <i class="fas"
+                   :class="repo.expanded ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
               </div>
             </div>
+
             <div class="repo-tech">
-              <span class="tech-tag" v-for="tech in repo.technologies" :key="tech" :data-tech="tech">{{ tech }}</span>
+              <span class="tech-tag"
+                    v-for="tech in repo.technologies"
+                    :key="tech"
+                    :data-tech="tech">
+                {{ tech }}
+              </span>
             </div>
+
             <div class="repo-footer">
-              <a v-if="!repo.private" :href="repo.url" target="_blank" class="repo-link">Ver no GitHub <i class="fas fa-external-link-alt"></i></a>
-              <span v-if="repo.private" class="repo-private"><i class="fas fa-lock"></i> Repositório Privado</span>
-              <span class="repo-updated">Atualizado: {{ formatDate(repo.updated) }}</span>
+              <a v-if="!repo.private"
+                 :href="repo.url"
+                 target="_blank"
+                 class="repo-link">
+                Ver no GitHub <i class="fas fa-external-link-alt"></i>
+              </a>
+              <span v-if="repo.private" class="repo-private">
+                <i class="fas fa-lock"></i> Repositório Privado
+              </span>
+              <span class="repo-updated">
+                Atualizado: {{ formatDate(repo.updated) }}
+              </span>
             </div>
           </div>
         </div>
@@ -124,7 +174,9 @@
         <div class="empty-state" v-if="filteredRepositories.length === 0">
           <i class="fas fa-search"></i>
           <p>Nenhum repositório encontrado com os filtros atuais.</p>
-          <button @click="resetFilters" class="btn btn-secondary">Limpar filtros</button>
+          <button @click="resetFilters" class="btn btn-secondary">
+            Limpar filtros
+          </button>
         </div>
       </div>
     </section>
@@ -133,38 +185,56 @@
       <div class="container">
         <div class="about-content">
           <h3>Sobre Mim</h3>
-          <p>Sou um <strong>Tech Lead</strong> e <strong>Desenvolvedor Full-Stack</strong> baseado em Santo Ângelo, RS, Brasil 🇧🇷. Tenho paixão por construir soluções robustas e eficientes, liderar equipes e otimizar processos com práticas de <strong>DevOps</strong>.</p>
+          <p>
+            Sou <strong>Senior Software Engineer</strong> e <strong>Tech Lead</strong>,
+            atuando na interseção entre <strong>arquitetura de software</strong>,
+            <strong>plataformas</strong> e <strong>DevOps</strong>.
+            Trabalho com sistemas em produção, focando em escalabilidade,
+            confiabilidade e redução de complexidade operacional.
+          </p>
 
           <div class="about-details">
             <div class="about-item">
-              <i class="fas fa-code"></i>
+              <i class="fas fa-diagram-project"></i>
               <div>
-                <h4>Desenvolvimento</h4>
-                <p>Experiência sólida como desenvolvedor Full-Stack, com foco no ecossistema JavaScript/TypeScript.</p>
+                <h4>Arquitetura & Sistemas</h4>
+                <p>
+                  Definição de arquiteturas orientadas a eventos,
+                  integrações assíncronas e sistemas distribuídos.
+                </p>
               </div>
             </div>
 
             <div class="about-item">
               <i class="fas fa-users"></i>
               <div>
-                <h4>Liderança</h4>
-                <p>Liderança técnica em times de desenvolvimento há mais de 2 anos.</p>
+                <h4>Liderança Técnica</h4>
+                <p>
+                  Liderança de times de engenharia, mentoria,
+                  code reviews e tomada de decisões técnicas.
+                </p>
               </div>
             </div>
 
             <div class="about-item">
               <i class="fas fa-server"></i>
               <div>
-                <h4>DevOps</h4>
-                <p>Experiência sólida em DevOps, gerenciando serviços em produção e pipelines CI/CD.</p>
+                <h4>Plataforma & DevOps</h4>
+                <p>
+                  Infraestrutura como código, CI/CD,
+                  observabilidade e automação de ambientes produtivos.
+                </p>
               </div>
             </div>
 
             <div class="about-item">
               <i class="fas fa-graduation-cap"></i>
               <div>
-                <h4>Formação</h4>
-                <p>Cursando Graduação em DevOps (Anhanguera) e cursei Ciência da Computação (Unipampa).</p>
+                <h4>Formação & Base Técnica</h4>
+                <p>
+                  Análise e Desenvolvimento de Sistemas (Anhanguera)
+                  e base sólida em Ciência da Computação (UNIPAMPA).
+                </p>
               </div>
             </div>
           </div>
@@ -177,7 +247,7 @@
         <div class="footer-content">
           <div class="footer-info">
             <h3>Juliano Stroschön</h3>
-            <p>Tech Lead | Full Stack Developer</p>
+            <p>Senior Software Engineer • Platform • DevOps • Tech Lead</p>
             <p>Santo Ângelo, RS - Brasil</p>
           </div>
           <div class="footer-contact">
@@ -206,26 +276,5 @@
   <script src="js/technologies.js"></script>
   <script src="js/repositories.js"></script>
   <script src="js/app.js"></script>
-  <script>
-    // Compatibility shim: if the shared TECH_COLOR_VARS is present, use it in the Vue app
-    (function(){
-      const originalCreateApp = window.Vue && window.Vue.createApp
-      if (!originalCreateApp) return
-
-      window.Vue.createApp = function(options) {
-        options.methods = options.methods || {}
-        options.methods.techColorStyle = function(techName) {
-          // If the page defines a css var mapping, prefer that; otherwise try shared colors
-          if (window.TECH_COLOR_VARS && window.TECH_COLOR_VARS[techName]) {
-            return { backgroundColor: window.TECH_COLOR_VARS[techName], color: window.getContrastColor ? window.getContrastColor(window.TECH_COLOR_VARS[techName]) : '#fff' }
-          }
-          // Fallback to previous behavior (no color)
-          return {}
-        }
-
-        return originalCreateApp(options)
-      }
-    })()
-  </script>
 </body>
 </html>
