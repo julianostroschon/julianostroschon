@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Juliano Stroschon — Currículo</title>
+
   <style>
     :root{
       --bg:#f6f8fb;
@@ -12,18 +13,22 @@
       --muted:#6b7280;
       --glass: rgba(15,76,129,0.08);
       --radius:12px;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      --layout-padding:32px;
+
+      font-family: Inter, system-ui, -apple-system, "Segoe UI",
+                   Roboto, "Helvetica Neue", Arial;
     }
 
     *{box-sizing:border-box}
     html,body{height:100%}
+
     body{
       margin:0;
       background:linear-gradient(180deg,var(--bg),#eef3f9);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
       color:#0b1220;
       padding:24px;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
     }
 
     .container{
@@ -34,24 +39,30 @@
       box-shadow:0 8px 30px rgba(15,76,129,0.08);
       overflow:hidden;
       display:grid;
-      grid-template-columns: 1fr 320px;
-      gap:0;
+      grid-template-columns:1fr 320px;
     }
 
+    /* HEADER */
     header{
-      grid-column: 1 / -1;
+      grid-column:1 / -1;
       display:flex;
       align-items:center;
       justify-content:space-between;
-      padding:28px 32px;
+      padding:24px var(--layout-padding);
       border-bottom:1px solid rgba(15,76,129,0.06);
-      background:linear-gradient(90deg, rgba(15,76,129,0.03), transparent);
+      background:linear-gradient(
+        90deg,
+        rgba(15,76,129,0.03),
+        transparent
+      );
     }
+
     .title{
       display:flex;
       gap:18px;
       align-items:center;
     }
+
     .avatar{
       width:76px;
       height:76px;
@@ -64,43 +75,87 @@
       font-size:22px;
       color:var(--accent);
     }
-    h1{margin:0;font-size:20px;letter-spacing:0.6px}
-    .subtitle{margin:0;color:var(--muted);font-size:13px}
 
+    h1{
+      margin:0;
+      font-size:20px;
+      letter-spacing:.4px;
+    }
+
+    .subtitle{
+      margin:0;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    /* MAIN */
     main{
       display:grid;
       grid-template-columns:1fr 320px;
-      gap:0;
     }
 
     .content{
-      padding:28px 32px;
-      min-height:320px;
+      padding:28px var(--layout-padding);
     }
 
     .sidebar{
-      padding:24px 28px;
+      padding:28px var(--layout-padding);
       border-left:1px solid rgba(15,76,129,0.04);
-      background:linear-gradient(180deg, rgba(15,76,129,0.02), transparent);
+      background:linear-gradient(
+        180deg,
+        rgba(15,76,129,0.02),
+        transparent
+      );
     }
 
-    section{margin-bottom:20px}
-    h2{font-size:14px;margin:0 0 10px 0;color:var(--accent)}
-    p, li{color:#1c2430;line-height:1.45;font-size:14px}
-    .muted{color:var(--muted);font-size:13px}
-    ul{margin:0;padding-left:1.1rem}
+    section{margin-bottom:22px}
 
-    /* Work item */
+    h2{
+      margin:0 0 10px 0;
+      font-size:14px;
+      color:var(--accent);
+    }
+
+    p,li{
+      font-size:14px;
+      line-height:1.5;
+      color:#1c2430;
+    }
+
+    .muted{
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    ul{
+      margin:0;
+      padding-left:1.1rem;
+    }
+
+    /* EXPERIENCE */
     .job{
-      margin-bottom:14px;
-      padding-bottom:10px;
-      border-bottom:1px dashed rgba(11,18,32,0.04);
+      margin-bottom:16px;
+      padding-bottom:12px;
+      border-bottom:1px dashed rgba(11,18,32,0.06);
     }
-    .job .role{font-weight:700}
-    .meta{font-size:13px;color:var(--muted);margin-bottom:6px}
 
-    /* Expertise pills */
-    .pills{display:flex;flex-wrap:wrap;gap:8px}
+    .job .role{
+      font-weight:700;
+    }
+
+    .meta{
+      font-size:13px;
+      color:var(--muted);
+      margin-bottom:6px;
+    }
+
+    /* PILLS */
+    .pills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+
     .pill{
       background:var(--glass);
       padding:6px 10px;
@@ -109,148 +164,201 @@
       color:var(--accent);
     }
 
-    /* contact list */
-    .contact{display:flex;flex-direction:column;gap:8px}
-    .contact a{color:var(--accent);text-decoration:none;font-weight:600}
+    /* CONTACT */
+    .contact{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
 
-    /* Print */
+    .contact a{
+      color:var(--accent);
+      font-weight:600;
+      text-decoration:none;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:860px){
+      .container, main{
+        grid-template-columns:1fr;
+      }
+
+      .sidebar{
+        border-left:none;
+        border-top:1px solid rgba(15,76,129,0.06);
+      }
+    }
+
     @media print{
-      body{padding:0;background:white}
-      .container{box-shadow:none;margin:0;border-radius:0}
-      header{padding:18px 20px}
-      .sidebar{border-left: none; border-top:1px solid rgba(0,0,0,0.06)}
-      main{grid-template-columns:1fr}
-    }
+      body{
+        padding:0;
+        background:#fff;
+      }
 
-    /* Responsive */
-    @media (max-width:860px){
-      .container{grid-template-columns:1fr}
-      main{grid-template-columns:1fr}
-      .sidebar{border-left:none;border-top:1px solid rgba(15,76,129,0.04)}
-    }
+      .container{
+        box-shadow:none;
+        border-radius:0;
+      }
 
-    .print-btn{
-      background:transparent;border:1px solid rgba(15,76,129,0.12);padding:8px 12px;border-radius:8px;
-      font-weight:600;color:var(--accent);cursor:pointer;
+      .sidebar{
+        border-left:none;
+        border-top:1px solid rgba(0,0,0,0.06);
+      }
     }
   </style>
 </head>
+
 <body>
-  <div class="container" role="document">
-    <header>
-      <div class="title">
-        <div class="avatar" aria-hidden="true">JS</div>
-        <div>
-          <h1>Juliano Stroschon</h1>
-          <p class="subtitle">Tech Lead • Desenvolvedor • DevOps</p>
-        </div>
+<div class="container" role="document">
+
+  <header>
+    <div class="title">
+      <div class="avatar">JS</div>
+      <div>
+        <h1>Juliano Stroschon</h1>
+        <p class="subtitle">
+          Senior Software Engineer • Platform • DevOps • Tech Lead
+        </p>
       </div>
-      <div style="display:flex;gap:12px;align-items:center">
-        <button class="print-btn" onclick="window.print()">Imprimir / Salvar PDF</button>
-      </div>
-    </header>
+    </div>
 
-    <main>
-      <div class="content">
-        <section aria-labelledby="sobre">
-          <h2 id="sobre">Sobre mim</h2>
-          <p>
-            Experiência em trabalho em equipe e gestão de pessoas. Fui gestor de Informática durante o período como Oficial no Exército Brasileiro (8 anos).
-            Ocupo posição de liderança em times de desenvolvimento de software desde 2022 e desempenho funções de DevOps nas aplicações dos times.
-            Já atuei com JavaScript, TypeScript, GraphQL, PostgreSQL, Docker, KnexJS, VueJS, Vuex, Pinia, Ansible, Terraform, Packer e GoLang.<br/>
-            Tenho facilidade de aprendizado e adaptação a novas tecnologias e ambientes.<br/>
-            Treinei o time de desenvolvimento na adoção de boas práticas, como testes automatizados, code review e integração contínua. Hoje atuo como Tech Lead na Partithura.
-            Além disso, busco constantemente me atualizar e aprimorar minhas habilidades técnicas e de liderança.
-            Inclusive este Currículo é atualizado por um
-          </p>
-        </section>
+    <!-- ação removida propositalmente -->
+    <div class="header-actions"></div>
+  </header>
 
-        <section aria-labelledby="experiencia">
-          <h2 id="experiencia">Experiência</h2>
+  <main>
+    <div class="content">
 
-          <article class="job" aria-labelledby="job-pt-2023">
-            <div class="role" id="job-pt-2023">Tech Lead | DevOps — Partithura</div>
-            <div class="meta">Nov 2023 — atual • Porto Alegre - RS</div>
-            <p class="muted">Atuo na gestão dos serviços de produção e nas tarefas do time de desenvolvimento e terceirizados.</p>
-          </article>
+      <section>
+        <h2>Resumo Profissional</h2>
+        <p>
+          Engenheiro de software sênior com forte atuação em
+          <strong>arquitetura de sistemas distribuídos</strong>,
+          <strong>plataformas internas</strong> e <strong>DevOps</strong>.
+          Experiência prática em arquiteturas orientadas a eventos,
+          infraestrutura como código, CI/CD e observabilidade.
+          Atuo liderando decisões técnicas, reduzindo complexidade
+          operacional e garantindo confiabilidade em ambientes produtivos.
+        </p>
+      </section>
 
-          <article class="job" aria-labelledby="job-fund-2021">
-            <div class="role" id="job-fund-2021">Desenvolvedor | Tech Lead — Fundimisa</div>
-            <div class="meta">Nov 2021 — Nov 2023 • Santo Ângelo - RS</div>
-            <p class="muted">Desenvolvi como fullstack em Node.js e fui designado Tech Lead, gerenciando programa de estagiários e contato com clientes e gestores.</p>
-          </article>
+      <section>
+        <h2>Experiência</h2>
 
-          <article class="job" aria-labelledby="job-aut-2020">
-            <div class="role" id="job-aut-2020">Desenvolvedor FullStack — Autônomo</div>
-            <div class="meta">Jul 2020 — Nov 2021</div>
-            <p class="muted">Desenvolvimento de sistemas de gestão para pequenos negócios e aprendizado de novas linguagens e práticas.</p>
-          </article>
-        </section>
-
-        <section aria-labelledby="education">
-          <h2 id="education">Formação</h2>
-          <p><strong>Unipampa Alegrete</strong> — Ciência da Computação (2014 - 2020*)</p>
-          <p class="muted">Anhanguera — Cursado entre 2024 - 2026 (curso não concluído)</p>
-          <p style="font-size:8px;color:var(--muted)">* O curso não foi concluído</p>
-        </section>
-
-        <section aria-labelledby="projects">
-          <h2 id="projects">Projetos & Repositórios</h2>
+        <article class="job">
+          <div class="role">
+            Tech Lead / Staff Software Engineer — Partithura
+          </div>
+          <div class="meta">
+            Nov 2023 — Atual • Porto Alegre - RS
+          </div>
           <ul>
-            <li><a href="https://github.com/julianostroschon" target="_blank" rel="noopener">github.com/julianostroschon</a></li>
+            <li>
+              Liderança técnica na definição da arquitetura de aplicações
+              e infraestrutura.
+            </li>
+            <li>
+              Implementação de arquitetura orientada a eventos com RabbitMQ.
+            </li>
+            <li>
+              Provisionamento de infraestrutura como código com Terraform.
+            </li>
+            <li>
+              Estruturação de observabilidade com Prometheus e Grafana.
+            </li>
+            <li>
+              Automação de CI/CD e deploys com Docker e GitHub Actions.
+            </li>
+            <li>
+              Mentoria técnica, code reviews e definição de padrões.
+            </li>
           </ul>
-        </section>
+        </article>
 
-      </div>
-
-      <aside class="sidebar" aria-labelledby="contato">
-        <section id="contato">
-          <h2>Contato</h2>
-          <div class="contact">
-            <div><strong>Telefone</strong><div class="muted">+55 51 99692-9042</div></div>
-            <div><strong>Email</strong><div><a href="mailto:julianostroschon@gmail.com">julianostroschon@gmail.com</a></div></div>
-            <div><strong>Local</strong><div class="muted">Santo Ângelo, RS</div></div>
-            <div><strong>GitHub</strong><div><a href="https://github.com/julianostroschon" target="_blank" rel="noopener">julianostroschon</a></div></div>
+        <article class="job">
+          <div class="role">
+            Tech Lead / Software Engineer — Fundimisa
           </div>
-        </section>
-
-        <section aria-labelledby="skills" style="margin-top:18px">
-          <h2 id="skills">Expertise</h2>
-          <div class="pills" role="list">
-            <span class="pill">GraphQL</span>
-            <span class="pill">TypeScript</span>
-            <span class="pill">NodeJS</span>
-            <span class="pill">VueJS</span>
-            <span class="pill">DevOps</span>
-            <span class="pill">KnexJS</span>
-            <span class="pill">PostgreSQL</span>
-            <span class="pill">Docker</span>
+          <div class="meta">
+            Nov 2021 — Nov 2023 • Santo Ângelo - RS
           </div>
-        </section>
+          <ul>
+            <li>Evolução técnica de aplicações web em produção.</li>
+            <li>Liderança técnica e mentoria de estagiários.</li>
+            <li>Integração com sistemas ERP e serviços externos.</li>
+          </ul>
+        </article>
 
-      </aside>
-    </main>
-  </div>
+        <article class="job">
+          <div class="role">
+            Software Engineer — Autônomo
+          </div>
+          <div class="meta">
+            Jul 2020 — Nov 2021
+          </div>
+          <p class="muted">
+            Desenvolvimento de soluções completas para pequenos negócios,
+            atuando do levantamento de requisitos ao deploy.
+          </p>
+        </article>
+      </section>
 
-  <!-- Meta: dados extra para possíveis parsers -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Juliano Stroschon",
-    "jobTitle":"Tech Lead",
-    "email":"julianostroschon@gmail.com",
-    "telephone":"+55 55 99692-9042",
-    "url":"https://github.com/julianostroschon",
-    "address":{
-      "@type":"PostalAddress",
-      "addressLocality":"Santo Ângelo",
-      "addressRegion":"RS",
-      "addressCountry":"BR"
-    }
-  }
-  </script>
-  <script src="js/technologies.js"></script>
-  <script src="js/cv-populate.js"></script>
+      <section>
+        <h2>Formação</h2>
+        <p>
+          <strong>Análise e Desenvolvimento de Sistemas</strong> —
+          Anhanguera (2024 – 2026)
+        </p>
+        <p class="muted">
+          Ciência da Computação — UNIPAMPA (2014 – 2020, não concluído)
+        </p>
+      </section>
+
+    </div>
+
+    <aside class="sidebar">
+      <section>
+        <h2>Contato</h2>
+        <div class="contact">
+          <div>
+            <strong>Email</strong><br>
+            <a href="mailto:julianostroschon@gmail.com">
+              julianostroschon@gmail.com
+            </a>
+          </div>
+          <div>
+            <strong>Local</strong><br>
+            <span class="muted">Santo Ângelo - RS</span>
+          </div>
+          <div>
+            <strong>GitHub</strong><br>
+            <a href="https://github.com/julianostroschon">
+              github.com/julianostroschon
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top:18px">
+        <h2>Expertise</h2>
+        <div class="pills">
+          <span class="pill">Arquitetura de Sistemas</span>
+          <span class="pill">Event-driven</span>
+          <span class="pill">Terraform</span>
+          <span class="pill">CI/CD</span>
+          <span class="pill">Observabilidade</span>
+          <span class="pill">Docker</span>
+          <span class="pill">Node.js</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">GraphQL</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">RabbitMQ</span>
+          <span class="pill">Vue.js</span>
+        </div>
+      </section>
+    </aside>
+
+  </main>
+</div>
 </body>
 </html>
