@@ -10,7 +10,7 @@ const repositoriesData = [
       "Jinja",
       "Shell"
     ],
-    "updated": "2026-01-02",
+    "updated": "2026-01-03",
     "private": true,
     "description": "🔒 Repositório Privado",
     "stars": "🔒",
@@ -24,7 +24,7 @@ const repositoriesData = [
       "HTML",
       "JavaScript"
     ],
-    "updated": "2026-01-02",
+    "updated": "2026-01-03",
     "private": false,
     "description": "Config files for my GitHub profile.",
     "url": "https://github.com/julianostroschon/julianostroschon",
