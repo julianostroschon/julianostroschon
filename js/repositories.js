@@ -7,7 +7,7 @@ const repositoriesData = [
       "HTML",
       "JavaScript"
     ],
-    "updated": "2026-01-30",
+    "updated": "2026-01-31",
     "private": false,
     "description": "Config files for my GitHub profile.",
     "url": "https://github.com/julianostroschon/julianostroschon",
