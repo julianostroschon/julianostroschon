@@ -1,6 +1,6 @@
 # Juliano Stroschön
 
-**Senior Software Engineer | Platform & DevOps**
+**Senior Software Engineer | Platform Engineer & DevOps**
 
 📍 Brazil  
 📧 julianostroschon@gmail.com  
@@ -17,7 +17,7 @@ Senior software engineer with strong experience in platform engineering, DevOps 
 ## PROFESSIONAL EXPERIENCE
 
 ### **Partithura**  
-**Senior Software Engineer / Platform & DevOps**  
+**Senior Software Engineer / Platform Engineer & DevOps**  
 *Nov 2023 – Present*
 
 - Designed and evolved application and infrastructure architecture with focus on scalability and reliability.

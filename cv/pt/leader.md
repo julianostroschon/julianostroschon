@@ -63,7 +63,7 @@ Líder técnico com sólida experiência em desenvolvimento de software, platafo
 ## FORMAÇÃO
 
 - Análise e Desenvolvimento de Sistemas – Anhanguera (2024 – 2026)
-- Ciência da Computação – UNIPAMPA (2014 – 2020, não concluído)
+- Ciência da Computação – UNIPAMPA (2014 – 2020)
 
 ---
 

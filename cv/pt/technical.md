@@ -1,6 +1,6 @@
 # Juliano Stroschön
 
-**Senior Software Engineer | Platform & DevOps**
+**Senior Software Engineer | Platform Engineer & DevOps**
 
 📍 Santo Ângelo – RS, Brasil  
 📧 julianostroschon@gmail.com  
@@ -17,7 +17,7 @@ Engenheiro de software sênior com forte atuação em plataforma, infraestrutura
 ## EXPERIÊNCIA PROFISSIONAL
 
 ### **Partithura**  
-**Senior Software Engineer / Platform & DevOps**  
+**Senior Software Engineer / Platform Engineer & DevOps**  
 *Nov 2023 – Atual*
 
 - Definição e evolução da arquitetura de aplicações e infraestrutura com foco em escalabilidade e confiabilidade.
