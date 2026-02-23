@@ -1,9 +1,11 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-f-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Juliano Stroschon — Currículo</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
 
   <style>
     :root{
@@ -32,7 +34,7 @@
     }
 
     .container{
-      max-width:900px;
+      max-width: auto;
       margin:0 auto;
       background:var(--card);
       border-radius:var(--radius);
@@ -177,6 +179,20 @@
       text-decoration:none;
     }
 
+    /* ACTIONS */
+    .header-actions {
+      display: flex;
+      gap: 12px;
+    }
+    .header-actions select, .header-actions button {
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid rgba(15,76,129,0.1);
+      background: var(--glass);
+      color: var(--accent);
+      font-size: 13px;
+    }
+
     /* RESPONSIVE */
     @media(max-width:860px){
       .container, main{
@@ -217,103 +233,25 @@
       <div>
         <h1>Juliano Stroschon</h1>
         <p class="subtitle">
-          Senior Software Engineer • Platform • DevOps • Tech Lead
+          Senior Software Engineer • Platform Engineer • DevOps • Tech Lead
         </p>
       </div>
     </div>
 
-    <!-- ação removida propositalmente -->
-    <div class="header-actions"></div>
+    <div class="header-actions">
+      <select id="cv-version">
+        <option value="devops">DevOps</option>
+        <option value="backend">Backend</option>
+        <option value="frontend">Frontend</option>
+        <option value="leader">Leader</option>
+      </select>
+      <button id="download-pdf">Baixar PDF</button>
+    </div>
   </header>
 
   <main>
-    <div class="content">
-
-      <section>
-        <h2>Resumo Profissional</h2>
-        <p>
-          Engenheiro de software sênior com forte atuação em
-          <strong>arquitetura de sistemas distribuídos</strong>,
-          <strong>plataformas internas</strong> e <strong>DevOps</strong>.
-          Experiência prática em arquiteturas orientadas a eventos,
-          infraestrutura como código, CI/CD e observabilidade.
-          Atuo liderando decisões técnicas, reduzindo complexidade
-          operacional e garantindo confiabilidade em ambientes produtivos.
-        </p>
-      </section>
-
-      <section>
-        <h2>Experiência</h2>
-
-        <article class="job">
-          <div class="role">
-            Tech Lead / Staff Software Engineer — Partithura
-          </div>
-          <div class="meta">
-            Nov 2023 — Atual • Porto Alegre - RS
-          </div>
-          <ul>
-            <li>
-              Liderança técnica na definição da arquitetura de aplicações
-              e infraestrutura.
-            </li>
-            <li>
-              Implementação de arquitetura orientada a eventos com RabbitMQ.
-            </li>
-            <li>
-              Provisionamento de infraestrutura como código com Terraform.
-            </li>
-            <li>
-              Estruturação de observabilidade com Prometheus e Grafana.
-            </li>
-            <li>
-              Automação de CI/CD e deploys com Docker e GitHub Actions.
-            </li>
-            <li>
-              Mentoria técnica, code reviews e definição de padrões.
-            </li>
-          </ul>
-        </article>
-
-        <article class="job">
-          <div class="role">
-            Tech Lead / Software Engineer — Fundimisa
-          </div>
-          <div class="meta">
-            Nov 2021 — Nov 2023 • Santo Ângelo - RS
-          </div>
-          <ul>
-            <li>Evolução técnica de aplicações web em produção.</li>
-            <li>Liderança técnica e mentoria de estagiários.</li>
-            <li>Integração com sistemas ERP e serviços externos.</li>
-          </ul>
-        </article>
-
-        <article class="job">
-          <div class="role">
-            Software Engineer — Autônomo
-          </div>
-          <div class="meta">
-            Jul 2020 — Nov 2021
-          </div>
-          <p class="muted">
-            Desenvolvimento de soluções completas para pequenos negócios,
-            atuando do levantamento de requisitos ao deploy.
-          </p>
-        </article>
-      </section>
-
-      <section>
-        <h2>Formação</h2>
-        <p>
-          <strong>Análise e Desenvolvimento de Sistemas</strong> —
-          Anhanguera (2024 – 2026)
-        </p>
-        <p class="muted">
-          Ciência da Computação — UNIPAMPA (2014 – 2020, não concluído)
-        </p>
-      </section>
-
+    <div class="content" id="cv-content">
+      <!-- O conteúdo será carregado aqui -->
     </div>
 
     <aside class="sidebar">
@@ -360,5 +298,9 @@
 
   </main>
 </div>
+
+<script src="js/cv-loader.js"></script>
+
 </body>
 </html>
+
