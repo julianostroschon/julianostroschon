@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-f-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Juliano Stroschon — Currículo</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
@@ -232,20 +232,24 @@
       <div class="avatar">JS</div>
       <div>
         <h1>Juliano Stroschon</h1>
-        <p class="subtitle">
-          Senior Software Engineer • Platform Engineer • DevOps • Tech Lead
+        <p class="subtitle" data-i18n="subtitle">
+          Senior Software Engineer • Platform • DevOps • Tech Lead
         </p>
       </div>
     </div>
 
     <div class="header-actions">
+      <select id="language-selector">
+        <option value="pt">Português</option>
+        <option value="en">English</option>
+      </select>
       <select id="cv-version">
         <option value="devops">DevOps</option>
         <option value="backend">Backend</option>
         <option value="frontend">Frontend</option>
         <option value="leader">Leader</option>
       </select>
-      <button id="download-pdf">Baixar PDF</button>
+      <button id="download-pdf" data-i18n="download">Baixar PDF</button>
     </div>
   </header>
 
@@ -256,7 +260,7 @@
 
     <aside class="sidebar">
       <section>
-        <h2>Contato</h2>
+        <h2 data-i18n="contact">Contato</h2>
         <div class="contact">
           <div>
             <strong>Email</strong><br>
@@ -265,7 +269,7 @@
             </a>
           </div>
           <div>
-            <strong>Local</strong><br>
+            <strong data-i18n="location">Local</strong><br>
             <span class="muted">Santo Ângelo - RS</span>
           </div>
           <div>
@@ -278,7 +282,7 @@
       </section>
 
       <section style="margin-top:18px">
-        <h2>Expertise</h2>
+        <h2 data-i18n="expertise">Expertise</h2>
         <div class="pills">
           <span class="pill">Arquitetura de Sistemas</span>
           <span class="pill">Event-driven</span>
