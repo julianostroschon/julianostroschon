@@ -1,6 +1,23 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "devops",
+    "technologies": [
+      "Docker",
+      "HCL",
+      "HTML",
+      "JavaScript",
+      "Jinja",
+      "Shell"
+    ],
+    "updated": "2026-02-26",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
     "name": "julianostroschon",
     "technologies": [
       "CSS",
@@ -13,23 +30,6 @@ const repositoriesData = [
     "url": "https://github.com/julianostroschon/julianostroschon",
     "stars": 2,
     "forks": 0
-  },
-  {
-    "name": "devops",
-    "technologies": [
-      "Docker",
-      "HCL",
-      "HTML",
-      "JavaScript",
-      "Jinja",
-      "Shell"
-    ],
-    "updated": "2026-01-11",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
   },
   {
     "name": "backup",
