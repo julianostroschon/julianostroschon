@@ -3,13 +3,13 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/juliano-stroschon-a199211ab/)
 [![Gmail Badge](https://img.shields.io/badge/-julianostroschon@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:julianostroschon@gmail.com)](mailto:julianostroschon@gmail.com)
 
-Sou um **Tech Lead** e **Desenvolvedor Full-Stack** baseado em Santo Ângelo, RS, Brasil 🇧🇷. Tenho paixão por construir soluções robustas e eficientes, liderar equipes e otimizar processos com práticas de **DevOps**.
+Sou um **Desenvolvedor Full-Stack** com experiência em DevOps, RS, Brasil 🇧🇷. Tenho paixão por construir soluções robustas e eficientes, liderar equipes e otimizar processos com práticas de **DevOps**.
 
 ---
 
 ### ✨ Sobre Mim
 
-* 👨‍💻 Liderança técnica em times de desenvolvimento há mais de 2 anos.
+* 👨‍💻 Liderança técnica em times de desenvolvimento há mais de 4 anos.
 * 🚀 Experiência sólida em DevOps, gerenciando serviços em produção e pipelines CI/CD.
 * 🛠️ Vivência como desenvolvedor Full-Stack, com foco no ecossistema JavaScript/TypeScript.
 * 🎖️ Background em gestão de equipes e TI adquirido durante 8 anos no Exército Brasileiro.
