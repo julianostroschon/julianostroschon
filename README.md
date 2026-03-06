@@ -1,6 +1,5 @@
 # Olá! Sou Juliano Stroschön 👋
 
-[![GitHub followers](https://img.shields.io/github/followers/julianostroschon?style=social)](https://github.com/julianostroschon)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/juliano-stroschon-a199211ab/)
 [![Gmail Badge](https://img.shields.io/badge/-julianostroschon@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:julianostroschon@gmail.com)](mailto:julianostroschon@gmail.com)
 
