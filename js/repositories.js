@@ -1,6 +1,22 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "volei-torneio",
+    "technologies": [
+      "CSS",
+      "JavaScript",
+      "Shell",
+      "TypeScript",
+      "Vue.js"
+    ],
+    "updated": "2026-03-16",
+    "private": true,
+    "description": "🔒 Repositório Privado",
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
+  },
+  {
     "name": "julianostroschon",
     "technologies": [
       "CSS",
@@ -42,22 +58,6 @@ const repositoriesData = [
     "url": "https://github.com/julianostroschon/backup",
     "stars": 0,
     "forks": 0
-  },
-  {
-    "name": "volei-torneio",
-    "technologies": [
-      "CSS",
-      "JavaScript",
-      "Shell",
-      "TypeScript",
-      "Vue.js"
-    ],
-    "updated": "2025-11-19",
-    "private": true,
-    "description": "🔒 Repositório Privado",
-    "stars": "🔒",
-    "forks": "🔒",
-    "url": null
   },
   {
     "name": "api-typescript-messages",
