@@ -1,13 +1,25 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "claude-gateway",
+    "technologies": [
+      "TypeScript"
+    ],
+    "updated": "2026-03-22",
+    "private": false,
+    "description": "Repositório claude-gateway",
+    "url": "https://github.com/julianostroschon/claude-gateway",
+    "stars": 0,
+    "forks": 0
+  },
+  {
     "name": "julianostroschon",
     "technologies": [
       "CSS",
       "HTML",
       "JavaScript"
     ],
-    "updated": "2026-03-21",
+    "updated": "2026-03-22",
     "private": false,
     "description": "Config files for my GitHub profile.",
     "url": "https://github.com/julianostroschon/julianostroschon",
