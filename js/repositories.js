@@ -1,13 +1,27 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
+    "name": "controle-pj",
+    "technologies": [
+      "CSS",
+      "JavaScript",
+      "TypeScript"
+    ],
+    "updated": "2026-04-28",
+    "private": false,
+    "description": "Repositório controle-pj",
+    "url": "https://github.com/julianostroschon/controle-pj",
+    "stars": 0,
+    "forks": 0
+  },
+  {
     "name": "julianostroschon",
     "technologies": [
       "CSS",
       "HTML",
       "JavaScript"
     ],
-    "updated": "2026-04-26",
+    "updated": "2026-04-27",
     "private": false,
     "description": "Config files for my GitHub profile.",
     "url": "https://github.com/julianostroschon/julianostroschon",
