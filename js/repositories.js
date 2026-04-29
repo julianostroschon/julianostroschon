@@ -8,11 +8,11 @@ const repositoriesData = [
       "TypeScript"
     ],
     "updated": "2026-04-28",
-    "private": false,
+    "private": true,
     "description": "Repositório controle-pj",
-    "url": "https://github.com/julianostroschon/controle-pj",
-    "stars": 0,
-    "forks": 0
+    "stars": "🔒",
+    "forks": "🔒",
+    "url": null
   },
   {
     "name": "julianostroschon",
@@ -21,7 +21,7 @@ const repositoriesData = [
       "HTML",
       "JavaScript"
     ],
-    "updated": "2026-04-27",
+    "updated": "2026-04-28",
     "private": false,
     "description": "Config files for my GitHub profile.",
     "url": "https://github.com/julianostroschon/julianostroschon",
