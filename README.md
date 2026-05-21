@@ -9,12 +9,12 @@ Sou um **Desenvolvedor Full-Stack** com experiência em DevOps, RS, Brasil 🇧�
 
 ### ✨ Sobre Mim
 
-* 👨‍💻 Liderança técnica em times de desenvolvimento há mais de 4 anos.
+* 👨‍💻 Liderança técnica em times de desenvolvimento há mais de 5 anos.
 * 🚀 Experiência sólida em DevOps, gerenciando serviços em produção e pipelines CI/CD.
 * 🛠️ Vivência como desenvolvedor Full-Stack, com foco no ecossistema JavaScript/TypeScript.
-* 🎖️ Background em gestão de equipes e TI adquirido durante 8 anos no Exército Brasileiro.
+* 🎖️ Background em gestão de equipes e TI adquirido durante 8 anos no Exército Brasileiro e experiência em times de desenvolvimento remoto.
 * 🎓 Cursando Graduação em DevOps (Anhanguera) e cursei Ciência da Computação (Unipampa).
-* 💡 Sempre buscando aprender e aplicar novas tecnologias para resolver problemas complexos.
+* 💡 Sempre buscando aprender e aplicar novas tecnologias para resolver problemas.
 
 ---
 
