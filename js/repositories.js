@@ -1,32 +1,32 @@
 // Dados dos repositórios
 const repositoriesData = [
   {
-    "name": "julianostroschon",
-    "technologies": [
-      "CSS",
-      "HTML",
-      "JavaScript"
-    ],
-    "updated": "2026-05-31",
-    "private": false,
-    "description": "Config files for my GitHub profile.",
-    "url": "https://github.com/julianostroschon/julianostroschon",
-    "stars": 2,
-    "forks": 0
-  },
-  {
     "name": "controle-pj",
     "technologies": [
       "CSS",
       "JavaScript",
       "TypeScript"
     ],
-    "updated": "2026-05-28",
+    "updated": "2026-06-01",
     "private": true,
     "description": "Repositório controle-pj",
     "stars": "🔒",
     "forks": "🔒",
     "url": null
+  },
+  {
+    "name": "julianostroschon",
+    "technologies": [
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "updated": "2026-06-01",
+    "private": false,
+    "description": "Config files for my GitHub profile.",
+    "url": "https://github.com/julianostroschon/julianostroschon",
+    "stars": 2,
+    "forks": 0
   },
   {
     "name": "fortuna-app",
