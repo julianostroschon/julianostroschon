@@ -7,7 +7,7 @@ const repositoriesData = [
       "JavaScript",
       "TypeScript"
     ],
-    "updated": "2026-06-02",
+    "updated": "2026-06-03",
     "private": true,
     "description": "Repositório controle-pj",
     "stars": "🔒",
@@ -21,7 +21,7 @@ const repositoriesData = [
       "HTML",
       "JavaScript"
     ],
-    "updated": "2026-06-02",
+    "updated": "2026-06-03",
     "private": false,
     "description": "Config files for my GitHub profile.",
     "url": "https://github.com/julianostroschon/julianostroschon",
