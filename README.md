@@ -1,54 +1,62 @@
-# Olá! Sou Juliano Stroschön 👋
+# Juliano Stroschön
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/juliano-stroschon-a199211ab/)
-[![Gmail Badge](https://img.shields.io/badge/-julianostroschon@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:julianostroschon@gmail.com)](mailto:julianostroschon@gmail.com)
+[![Email](https://img.shields.io/badge/-julianostroschon%40gmail.com-c14438?style=for-the-badge&logo=gmail&logoColor=white)](mailto:julianostroschon@gmail.com)
 
-Sou um **Desenvolvedor Full-Stack** com experiência em DevOps, RS, Brasil 🇧🇷. Tenho paixão por construir soluções robustas e eficientes, liderar equipes e otimizar processos com práticas de **DevOps**.
-
----
-
-### ✨ Sobre Mim
-
-* 👨‍💻 Liderança técnica em times de desenvolvimento há mais de 5 anos.
-* 🚀 Experiência sólida em DevOps, gerenciando serviços em produção e pipelines CI/CD.
-* 🛠️ Vivência como desenvolvedor Full-Stack, com foco no ecossistema JavaScript/TypeScript.
-* 🎖️ Background em gestão de equipes e TI adquirido durante 8 anos no Exército Brasileiro e experiência em times de desenvolvimento remoto.
-* 🎓 Cursando Graduação em DevOps (Anhanguera) e cursei Ciência da Computação (Unipampa).
-* 💡 Sempre buscando aprender e aplicar novas tecnologias para resolver problemas.
+Sou **Senior Software Engineer** e **Tech Lead**, com foco em **Platform Engineering**, **DevOps** e **arquitetura de software**. Atuo na interseção entre produto e plataforma, ajudando times a entregar com mais confiabilidade, menos atrito operacional e melhor clareza técnica.
 
 ---
 
-### 🚀 Portfólio de Projetos
+### Sobre este portfólio
 
-Meu portfólio de projetos está disponível em [https://julianostroschon.github.io/julianostroschon](https://julianostroschon.github.io/julianostroschon). Ele exibe meus repositórios públicos do GitHub em uma interface amigável e responsiva.
+Este repositório é a vitrine pública do meu trabalho. Ele reúne projetos, experimentos e evidências de atuação em:
 
-#### Características
+* liderança técnica e tomada de decisão arquitetural
+* plataformas internas e automação de infraestrutura
+* CI/CD, observabilidade e confiabilidade operacional
+* desenvolvimento fullstack com Vue, TypeScript e Node.js
 
-- 🔄 **Atualização Automática**: Utiliza GitHub Actions para atualizar automaticamente os dados dos repositórios
-- 🌙 **Modo Escuro/Claro**: Suporte a tema escuro e claro
-- 🔍 **Filtragem e Busca**: Filtre repositórios por tecnologia ou busque por nome/descrição
-- 📱 **Design Responsivo**: Funciona em dispositivos móveis, tablets e desktops
-- ⚡ **Reatividade com Vue.js**: Interface reativa e dinâmica
-- 📊 **Contador de Repositórios**: Mostra quantos repositórios estão sendo exibidos
-- 📝 **Descrições Expandíveis**: Cards com tamanho padronizado e botão "Ver mais" para descrições longas
+O site principal está em [julianostroschon.github.io/julianostroschon](https://julianostroschon.github.io/julianostroschon) e foi estruturado como uma landing page para recrutadores e gestores técnicos.
 
 ---
 
-### 🔧 Tecnologias e Ferramentas
+### O que eu faço melhor
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
-![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Knex.js](https://img.shields.io/badge/Knex.js-D16B35?style=for-the-badge&logo=knex.js&logoColor=white)
-![Vuex](https://img.shields.io/badge/Vuex-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)
-![Pinia](https://img.shields.io/badge/Pinia-FFD954?style=for-the-badge&logo=pinia&logoColor=black)
+* Lidero times e decisões técnicas com foco em resultado e redução de risco.
+* Estruturo ambientes, pipelines e padrões para acelerar entrega contínua.
+* Construo produtos e integrações com uma visão pragmática de engenharia.
+* Traduzo necessidades de negócio em soluções técnicas claras e sustentáveis.
 
 ---
 
-* 📫 Como me encontrar: [julianostroschon@gmail.com](mailto:julianostroschon@gmail.com)
-* 🔗 GitHub: [https://github.com/julianostroschon](https://github.com/julianostroschon)
+### Stack principal
+
+* TypeScript
+* JavaScript
+* Vue.js
+* Node.js
+* GraphQL
+* PostgreSQL
+* Docker
+* Terraform
+* RabbitMQ
+* GitHub Actions
+
+---
+
+### Contato
+
+* Email: [julianostroschon@gmail.com](mailto:julianostroschon@gmail.com)
+* GitHub: [github.com/julianostroschon](https://github.com/julianostroschon)
+* LinkedIn: [linkedin.com/in/juliano-stroschon-a199211ab](https://www.linkedin.com/in/juliano-stroschon-a199211ab/)
+
+---
+
+### Versão sugerida para o LinkedIn
+
+**Sobre**
+
+> Sou Senior Software Engineer e Tech Lead, com foco em Platform Engineering, DevOps e arquitetura de software. Atuo na interseção entre produto, plataforma e confiabilidade, liderando decisões técnicas, automatizando operações e estruturando entregas contínuas com menos atrito e mais clareza. Tenho experiência com Vue, TypeScript, Node.js, CI/CD, observabilidade, infraestrutura como código e sistemas distribuídos.
+>
+> Gosto de atuar onde engenharia encontra impacto real: reduzir risco operacional, acelerar times e transformar complexidade técnica em soluções sustentáveis.
+
