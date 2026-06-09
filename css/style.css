@@ -235,8 +235,8 @@
 html.dark-mode {
   --primary-color: #60a5fa;
   --primary-color-rgb: 96, 165, 250; /* Valores RGB para efeitos de transparência no modo escuro */
-  --secondary-color: #0f172a;
-  --accent-color: #2563eb;
+  --secondary-color: #e5eef8;
+  --accent-color: #38bdf8;
 
   --text-primary: #E0E0E0;
   --text-secondary: #B0B0B0;
@@ -244,7 +244,7 @@ html.dark-mode {
 
   --bg-primary: #1A1A1A;
   --bg-secondary: #252525;
-  --bg-card: #2A2A2A;
+  --bg-card: rgba(36, 41, 48, 0.96);
 
   --border-color: #333333;
 
@@ -498,6 +498,32 @@ a:hover {
   display: block;
   color: var(--secondary-color);
   margin-bottom: 0.35rem;
+}
+
+.signal-card p,
+.hero-card li,
+.proof-item,
+.about-item p,
+.about-item h4 {
+  color: var(--text-primary);
+}
+
+.hero-card-primary {
+  color: #1c2430;
+}
+
+.hero-card-primary .hero-card-kicker,
+.hero-card-primary h3,
+.hero-card-primary li {
+  color: #1c2430;
+}
+
+.hero-card-primary .hero-card-kicker {
+  color: var(--primary-color);
+}
+
+.proof-item span {
+  color: var(--primary-color);
 }
 
 .hero-aside {
