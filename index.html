@@ -37,27 +37,95 @@
     </header>
 
     <section class="hero">
-      <div class="container">
+      <div class="container hero-layout">
         <div class="hero-content">
-          <h2>Projetos e Experimentos de Engenharia</h2>
-          <p>
-            Este portfólio reúne projetos open source e experimentos técnicos voltados a
-            <strong>arquitetura de software</strong>, <strong>sistemas distribuídos</strong>,
-            <strong>DevOps</strong> e <strong>plataformas internas</strong>.
-            Os repositórios refletem soluções reais utilizando Vue.js, TypeScript, Node.js,
-            mensageria, automação e infraestrutura como código.
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Disponível para oportunidades
+          </div>
+          <h2>Engenharia que une produto, plataforma e confiabilidade.</h2>
+          <p class="hero-description">
+            Este portfólio foi desenhado como uma vitrine profissional: reúne sinais de
+            liderança técnica, arquitetura, DevOps e desenvolvimento fullstack em um formato
+            direto, visual e fácil de avaliar por recrutadores e gestores técnicos.
           </p>
           <div class="hero-actions">
-            <a href="#repositories" class="btn btn-primary">Ver Projetos</a>
-            <a href="mailto:julianostroschon@gmail.com" class="btn btn-secondary">Contato</a>
+            <a href="#repositories" class="btn btn-primary">Explorar projetos</a>
+            <a href="cv.html" class="btn btn-secondary">Abrir currículo</a>
+            <a href="mailto:julianostroschon@gmail.com" class="btn btn-tertiary">Falar comigo</a>
           </div>
+          <div class="hero-signals">
+            <div class="signal-card">
+              <span class="signal-label">Foco</span>
+              <strong>Platform Engineering</strong>
+              <p>Entregas com visão de escala, automação e confiabilidade.</p>
+            </div>
+            <div class="signal-card">
+              <span class="signal-label">Stack</span>
+              <strong>TypeScript + Vue + Node</strong>
+              <p>Base consistente em front, back e integrações entre serviços.</p>
+            </div>
+            <div class="signal-card">
+              <span class="signal-label">Perfil</span>
+              <strong>Tech Lead Hands-on</strong>
+              <p>Decisão técnica, mentoria e execução com foco em resultado.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-aside">
+          <div class="hero-card hero-card-primary">
+            <span class="hero-card-kicker">Cartão de visitas</span>
+            <h3>Resumo rápido para contratação</h3>
+            <ul>
+              <li>Liderança em times de engenharia</li>
+              <li>Arquitetura e sistemas distribuídos</li>
+              <li>CI/CD, infraestrutura e observabilidade</li>
+              <li>Produtos web com foco em entrega contínua</li>
+            </ul>
+          </div>
+          <div class="hero-card hero-card-stats">
+            <div>
+              <strong>{{ repositories.length }}</strong>
+              <span>repositórios indexados</span>
+            </div>
+            <div>
+              <strong>{{ publicReposCount }}</strong>
+              <span>projetos públicos</span>
+            </div>
+            <div>
+              <strong>{{ privateReposCount }}</strong>
+              <span>projetos privados</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="proof-strip">
+      <div class="container proof-grid">
+        <div class="proof-item">
+          <span>Arquitetura</span>
+          <strong>Eventos, integrações e decisões técnicas que reduzem risco.</strong>
+        </div>
+        <div class="proof-item">
+          <span>Plataforma</span>
+          <strong>Automação de deploy, observabilidade e ambientes previsíveis.</strong>
+        </div>
+        <div class="proof-item">
+          <span>Produto</span>
+          <strong>Interfaces e serviços com foco em uso real e evolução contínua.</strong>
         </div>
       </div>
     </section>
 
     <section class="tech-stack">
       <div class="container">
-        <h3>Stack & Domínios Técnicos</h3>
+        <div class="section-heading">
+          <span class="section-kicker">Tecnologias</span>
+          <h3>Stack e domínios que sustentam a entrega</h3>
+          <p>Toque em uma tecnologia para filtrar os repositórios e revelar a experiência associada.</p>
+        </div>
         <div class="tech-grid">
           <div class="tech-item"
                v-for="tech in technologies"
@@ -184,13 +252,16 @@
     <section class="about">
       <div class="container">
         <div class="about-content">
-          <h3>Sobre Mim</h3>
+          <div class="section-heading section-heading-left">
+            <span class="section-kicker">Contexto profissional</span>
+            <h3>O que eu entrego na prática</h3>
+          </div>
           <p>
             Sou <strong>Senior Software Engineer</strong> e <strong>Tech Lead</strong>,
             atuando na interseção entre <strong>arquitetura de software</strong>,
             <strong>plataformas</strong> e <strong>DevOps</strong>.
-            Trabalho com sistemas em produção, focando em escalabilidade,
-            confiabilidade e redução de complexidade operacional.
+            Este portfólio privilegia sinais de impacto: clareza de escopo, profundidade técnica
+            e uma leitura rápida de onde eu consigo gerar valor em um time.
           </p>
 
           <div class="about-details">
