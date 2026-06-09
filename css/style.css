@@ -253,6 +253,30 @@ html.dark-mode {
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
+html.dark-mode .header {
+  background: rgba(10, 14, 20, 0.92);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+}
+
+html.dark-mode .logo h1 {
+  color: #f8fafc;
+}
+
+html.dark-mode .tagline {
+  color: #cbd5e1;
+}
+
+html.dark-mode .theme-toggle,
+html.dark-mode .social-link {
+  color: #dbe6f3;
+}
+
+html.dark-mode .theme-toggle:hover,
+html.dark-mode .social-link:hover {
+  color: var(--accent-color);
+}
+
 /* Reset e estilos base */
 * {
   margin: 0;
