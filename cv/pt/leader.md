@@ -10,7 +10,7 @@
 
 ## RESUMO PROFISSIONAL
 
-Líder técnico com sólida experiência em desenvolvimento de software, plataformas e infraestrutura. Atuação na definição de arquiteturas, liderança de times técnicos e evolução de sistemas críticos. Forte foco em tomada de decisão técnica, redução de riscos e formação de profissionais.
+Líder técnico com atuação em engenharia de software, arquitetura e plataformas. Trabalho com tomada de decisão técnica, evolução de sistemas críticos, automação e orientação de times para entrega contínua com menos risco operacional.
 
 ---
 
@@ -20,13 +20,10 @@ Líder técnico com sólida experiência em desenvolvimento de software, platafo
 **Tech Lead / Staff Software Engineer**  
 *Nov 2023 – Atual*
 
-- Liderança técnica na definição da arquitetura de sistemas e infraestrutura.
-- Tomada de decisões arquiteturais envolvendo mensageria, integração de serviços e automação.
-- Coordenação técnica de time de desenvolvimento e infraestrutura.
-- Implementação de pipelines CI/CD e automação de deploys, reduzindo tempo de entrega e erros operacionais.
-- Estruturação de observabilidade e monitoramento para ambientes produtivos.
-- Mentoria técnica, code reviews e definição de padrões de qualidade.
-- Apoio direto ao negócio na priorização e viabilidade técnica de demandas.
+- Liderança técnica na definição de arquitetura, infraestrutura e padrões de entrega.
+- Evolução de pipelines CI/CD, automação e observabilidade em ambientes produtivos.
+- Decisões arquiteturais envolvendo mensageria, integrações e confiabilidade.
+- Mentoria, code reviews e apoio à priorização técnica de demandas.
 
 ---
 
@@ -34,9 +31,8 @@ Líder técnico com sólida experiência em desenvolvimento de software, platafo
 **Tech Lead / Software Engineer**  
 *Nov 2021 – Nov 2023*
 
-- Evolução técnica de aplicações web em ambiente produtivo.
-- Promoção à liderança técnica, estruturando práticas de desenvolvimento e versionamento.
-- Mentoria de estagiários e desenvolvedores juniores.
+- Evolução de aplicações web em produção com Vue 3, TypeScript e Node.js.
+- Liderança técnica e mentoria de estagiários e desenvolvedores juniores.
 - Integração com sistemas ERP e serviços externos.
 
 ---
@@ -69,5 +65,5 @@ Líder técnico com sólida experiência em desenvolvimento de software, platafo
 
 ## DIFERENCIAIS
 
-- 8 anos como oficial do Exército Brasileiro, com forte experiência em liderança e gestão de pessoas
-- Capacidade de atuar entre engenharia e negócio
+- 8 anos como oficial do Exército Brasileiro, com experiência em liderança e gestão de pessoas
+- Capacidade de traduzir necessidades de negócio em decisões técnicas claras
