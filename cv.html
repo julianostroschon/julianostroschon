@@ -9,13 +9,16 @@
 
   <style>
     :root{
-      --bg:#f6f8fb;
-      --card:#ffffff;
+      --bg:#eff4fa;
+      --card:rgba(255,255,255,0.84);
       --accent:#0f4c81;
-      --muted:#6b7280;
-      --glass: rgba(15,76,129,0.08);
-      --radius:12px;
+      --accent-2:#2dd4bf;
+      --muted:#5b6574;
+      --text:#0b1220;
+      --glass: rgba(15,76,129,0.10);
+      --radius:22px;
       --layout-padding:32px;
+      --border: rgba(15,76,129,0.10);
 
       font-family: Inter, system-ui, -apple-system, "Segoe UI",
                    Roboto, "Helvetica Neue", Arial;
@@ -26,22 +29,27 @@
 
     body{
       margin:0;
-      background:linear-gradient(180deg,var(--bg),#eef3f9);
-      color:#0b1220;
+      background:
+        radial-gradient(circle at top left, rgba(15,76,129,0.12), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(45,212,191,0.12), transparent 28%),
+        linear-gradient(180deg,var(--bg),#eaf0f7);
+      color:var(--text);
       padding:24px;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
     }
 
     .container{
-      max-width: auto;
+      max-width: 1180px;
       margin:0 auto;
       background:var(--card);
+      border:1px solid var(--border);
       border-radius:var(--radius);
-      box-shadow:0 8px 30px rgba(15,76,129,0.08);
+      box-shadow:0 24px 70px rgba(15,23,42,0.10);
       overflow:hidden;
       display:grid;
       grid-template-columns:1fr 320px;
+      backdrop-filter: blur(18px);
     }
 
     /* HEADER */
@@ -51,12 +59,10 @@
       align-items:center;
       justify-content:space-between;
       padding:24px var(--layout-padding);
-      border-bottom:1px solid rgba(15,76,129,0.06);
-      background:linear-gradient(
-        90deg,
-        rgba(15,76,129,0.03),
-        transparent
-      );
+      border-bottom:1px solid var(--border);
+      background:
+        linear-gradient(90deg, rgba(15,76,129,0.04), transparent),
+        rgba(255,255,255,0.70);
     }
 
     .title{
@@ -68,14 +74,15 @@
     .avatar{
       width:76px;
       height:76px;
-      border-radius:16px;
-      background:var(--glass);
+      border-radius:22px;
+      background:linear-gradient(135deg, rgba(15,76,129,0.14), rgba(45,212,191,0.16));
       display:flex;
       align-items:center;
       justify-content:center;
       font-weight:700;
       font-size:22px;
       color:var(--accent);
+      border:1px solid var(--border);
     }
 
     h1{
@@ -90,6 +97,25 @@
       color:var(--muted);
     }
 
+    .hero-summary{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:12px;
+    }
+
+    .summary-pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(15,76,129,0.08);
+      color:var(--accent);
+      font-size:12px;
+      font-weight:700;
+    }
+
     /* MAIN */
     main{
       display:grid;
@@ -102,19 +128,17 @@
 
     .sidebar{
       padding:28px var(--layout-padding);
-      border-left:1px solid rgba(15,76,129,0.04);
-      background:linear-gradient(
-        180deg,
-        rgba(15,76,129,0.02),
-        transparent
-      );
+      border-left:1px solid var(--border);
+      background:linear-gradient(180deg, rgba(15,76,129,0.03), transparent);
     }
 
     section{margin-bottom:22px}
 
     h2{
       margin:0 0 10px 0;
-      font-size:14px;
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:0.16em;
       color:var(--accent);
     }
 
@@ -138,7 +162,7 @@
     .job{
       margin-bottom:16px;
       padding-bottom:12px;
-      border-bottom:1px dashed rgba(11,18,32,0.06);
+      border-bottom:1px dashed rgba(11,18,32,0.08);
     }
 
     .job .role{
@@ -159,11 +183,12 @@
     }
 
     .pill{
-      background:var(--glass);
+      background:rgba(15,76,129,0.08);
       padding:6px 10px;
       border-radius:999px;
       font-size:13px;
       color:var(--accent);
+      border:1px solid rgba(15,76,129,0.08);
     }
 
     /* CONTACT */
@@ -186,11 +211,51 @@
     }
     .header-actions select, .header-actions button {
       padding: 8px 12px;
-      border-radius: 8px;
-      border: 1px solid rgba(15,76,129,0.1);
-      background: var(--glass);
+      border-radius: 10px;
+      border: 1px solid rgba(15,76,129,0.14);
+      background: rgba(255,255,255,0.82);
       color: var(--accent);
       font-size: 13px;
+    }
+
+    .header-actions button{
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 10px 22px rgba(15,76,129,0.18);
+    }
+
+    .cv-summary{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:12px;
+      margin-bottom:24px;
+    }
+
+    .cv-metric{
+      border:1px solid var(--border);
+      background:rgba(255,255,255,0.72);
+      border-radius:18px;
+      padding:14px;
+    }
+
+    .cv-metric strong{
+      display:block;
+      color:var(--accent);
+      font-size:20px;
+      line-height:1;
+      margin-bottom:4px;
+    }
+
+    .cv-metric span{
+      color:var(--muted);
+      font-size:12px;
+    }
+
+    .sidebar-card{
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:16px;
+      background:rgba(255,255,255,0.72);
     }
 
     /* RESPONSIVE */
@@ -202,6 +267,10 @@
       .sidebar{
         border-left:none;
         border-top:1px solid rgba(15,76,129,0.06);
+      }
+
+      .cv-summary{
+        grid-template-columns:1fr;
       }
     }
 
@@ -220,6 +289,10 @@
         border-left:none;
         border-top:1px solid rgba(0,0,0,0.06);
       }
+
+      .header-actions{
+        display:none;
+      }
     }
   </style>
 </head>
@@ -235,6 +308,11 @@
         <p class="subtitle" data-i18n="subtitle">
           Senior Software Engineer • Platform • DevOps • Tech Lead
         </p>
+        <div class="hero-summary" aria-label="Resumo profissional">
+          <span class="summary-pill">Arquitetura</span>
+          <span class="summary-pill">Platform Engineering</span>
+          <span class="summary-pill">Entrega contínua</span>
+        </div>
       </div>
     </div>
 
@@ -245,6 +323,7 @@
       </select>
       <select id="cv-version">
         <option value="devops">DevOps</option>
+        <option value="platform">Platform</option>
         <option value="backend">Backend</option>
         <option value="frontend">Frontend</option>
         <option value="leader">Leader</option>
@@ -255,11 +334,25 @@
 
   <main>
     <div class="content" id="cv-content">
+      <section class="cv-summary" aria-label="Resumo profissional">
+        <div class="cv-metric">
+          <strong>Fullstack</strong>
+          <span>Vue, Node, TypeScript e integrações</span>
+        </div>
+        <div class="cv-metric">
+          <strong>Platform</strong>
+          <span>CI/CD, automação e observabilidade</span>
+        </div>
+        <div class="cv-metric">
+          <strong>Leadership</strong>
+          <span>Tech lead hands-on e mentoria</span>
+        </div>
+      </section>
       <!-- O conteúdo será carregado aqui -->
     </div>
 
     <aside class="sidebar">
-      <section>
+      <section class="sidebar-card">
         <h2 data-i18n="contact">Contato</h2>
         <div class="contact">
           <div>
@@ -281,7 +374,7 @@
         </div>
       </section>
 
-      <section style="margin-top:18px">
+      <section class="sidebar-card" style="margin-top:18px">
         <h2 data-i18n="expertise">Expertise</h2>
         <div class="pills">
           <span class="pill">Arquitetura de Sistemas</span>
@@ -307,4 +400,3 @@
 
 </body>
 </html>
-
