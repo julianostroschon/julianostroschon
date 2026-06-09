@@ -1,5 +1,5 @@
 ## Resumo Profissional
-Engenheiro de software sênior com forte atuação em **arquitetura de sistemas distribuídos**, **plataformas internas** e **DevOps**. Experiência prática em arquiteturas orientadas a eventos, infraestrutura como código, CI/CD e observabilidade. Atuo liderando decisões técnicas, reduzindo complexidade operacional e garantindo confiabilidade em ambientes produtivos.
+Engenheiro de software sênior com atuação em **arquitetura**, **plataformas internas** e **DevOps**. Foco em automação, entrega contínua e confiabilidade operacional.
 
 ## Experiência
 
@@ -16,7 +16,7 @@ Engenheiro de software sênior com forte atuação em **arquitetura de sistemas 
     <li>Provisionamento de infraestrutura como código com Terraform.</li>
     <li>Estruturação de observabilidade com Prometheus e Grafana.</li>
     <li>Automação de CI/CD e deploys com Docker e GitHub Actions.</li>
-    <li>Mentoria técnica, code reviews e definição de padrões.</li>
+    <li>Mentoria técnica e definição de padrões.</li>
   </ul>
 </article>
 
