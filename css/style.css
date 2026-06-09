@@ -277,6 +277,76 @@ html.dark-mode .social-link:hover {
   color: var(--accent-color);
 }
 
+html.dark-mode .signal-card,
+html.dark-mode .hero-card,
+html.dark-mode .proof-item,
+html.dark-mode .about-item,
+html.dark-mode .tech-item,
+html.dark-mode .repo-card {
+  background: rgba(19, 25, 34, 0.92);
+  border-color: rgba(148, 163, 184, 0.14);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+}
+
+html.dark-mode .hero-card-primary {
+  background: linear-gradient(180deg, rgba(24, 31, 41, 0.98), rgba(19, 25, 34, 0.94));
+  color: #e5eef8;
+}
+
+html.dark-mode .hero-card-primary .hero-card-kicker,
+html.dark-mode .hero-card-primary h3,
+html.dark-mode .hero-card-primary li {
+  color: #f8fafc;
+}
+
+html.dark-mode .hero-card-primary .hero-card-kicker {
+  color: var(--primary-color);
+}
+
+html.dark-mode .hero-card-stats div {
+  background: linear-gradient(180deg, rgba(96, 165, 250, 0.12), rgba(45, 212, 191, 0.08));
+}
+
+html.dark-mode .hero-card-stats span,
+html.dark-mode .signal-card p,
+html.dark-mode .repo-description,
+html.dark-mode .repo-updated,
+html.dark-mode .about p,
+html.dark-mode .about-item p,
+html.dark-mode .footer-info p,
+html.dark-mode .footer-links a,
+html.dark-mode .footer-contact p,
+html.dark-mode .tech-item span,
+html.dark-mode .section-heading p {
+  color: #cbd5e1;
+}
+
+html.dark-mode .repo-title,
+html.dark-mode .about-item h4,
+html.dark-mode .section-heading h3,
+html.dark-mode .footer h3,
+html.dark-mode .footer h4 {
+  color: #f8fafc;
+}
+
+html.dark-mode .tech-item i,
+html.dark-mode .about-item i,
+html.dark-mode .repo-card:hover .repo-title {
+  color: var(--primary-color);
+}
+
+html.dark-mode .repo-counter,
+html.dark-mode .sort-options select,
+html.dark-mode .search-box input {
+  background-color: rgba(17, 24, 39, 0.9);
+  color: #e5eef8;
+  border-color: rgba(148, 163, 184, 0.18);
+}
+
+html.dark-mode .repo-description.truncated::after {
+  background: linear-gradient(to bottom, transparent, rgba(19, 25, 34, 1));
+}
+
 /* Reset e estilos base */
 * {
   margin: 0;
